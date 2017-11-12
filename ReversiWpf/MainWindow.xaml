@@ -5,8 +5,478 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ReversiWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="800" Width="700">
+    <Grid x:Name="grid_reversi_fields">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="canvas_x00_y00" Margin="0" Grid.Column="0" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y00" Margin="0" Grid.Column="1" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y00" Margin="0" Grid.Column="2" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y00" Margin="0" Grid.Column="3" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y00" Margin="0" Grid.Column="4" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y00" Margin="0" Grid.Column="5" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y00" Margin="0" Grid.Column="6" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y00" Margin="0" Grid.Column="7" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y00" Margin="0" Grid.Column="8" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y00" Margin="0" Grid.Column="9" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y00" Margin="0" Grid.Column="10" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y00" Margin="0" Grid.Column="11" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y00" Margin="0" Grid.Column="12" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y00" Margin="0" Grid.Column="13" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y00" Margin="0" Grid.Column="14" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y00" Margin="0" Grid.Column="15" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y00" Margin="0" Grid.Column="16" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y00" Margin="0" Grid.Column="17" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y00" Margin="0" Grid.Column="18" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y00" Margin="0" Grid.Column="19" Grid.Row="0" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y01" Margin="0" Grid.Column="0" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y01" Margin="0" Grid.Column="1" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y01" Margin="0" Grid.Column="2" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y01" Margin="0" Grid.Column="3" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y01" Margin="0" Grid.Column="4" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y01" Margin="0" Grid.Column="5" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y01" Margin="0" Grid.Column="6" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y01" Margin="0" Grid.Column="7" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y01" Margin="0" Grid.Column="8" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y01" Margin="0" Grid.Column="9" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y01" Margin="0" Grid.Column="10" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y01" Margin="0" Grid.Column="11" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y01" Margin="0" Grid.Column="12" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y01" Margin="0" Grid.Column="13" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y01" Margin="0" Grid.Column="14" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y01" Margin="0" Grid.Column="15" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y01" Margin="0" Grid.Column="16" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y01" Margin="0" Grid.Column="17" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y01" Margin="0" Grid.Column="18" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y01" Margin="0" Grid.Column="19" Grid.Row="1" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y02" Margin="0" Grid.Column="0" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y02" Margin="0" Grid.Column="1" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y02" Margin="0" Grid.Column="2" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y02" Margin="0" Grid.Column="3" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y02" Margin="0" Grid.Column="4" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y02" Margin="0" Grid.Column="5" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y02" Margin="0" Grid.Column="6" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y02" Margin="0" Grid.Column="7" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y02" Margin="0" Grid.Column="8" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y02" Margin="0" Grid.Column="9" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y02" Margin="0" Grid.Column="10" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y02" Margin="0" Grid.Column="11" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y02" Margin="0" Grid.Column="12" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y02" Margin="0" Grid.Column="13" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y02" Margin="0" Grid.Column="14" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y02" Margin="0" Grid.Column="15" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y02" Margin="0" Grid.Column="16" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y02" Margin="0" Grid.Column="17" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y02" Margin="0" Grid.Column="18" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y02" Margin="0" Grid.Column="19" Grid.Row="2" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y03" Margin="0" Grid.Column="0" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y03" Margin="0" Grid.Column="1" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y03" Margin="0" Grid.Column="2" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y03" Margin="0" Grid.Column="3" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y03" Margin="0" Grid.Column="4" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y03" Margin="0" Grid.Column="5" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y03" Margin="0" Grid.Column="6" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y03" Margin="0" Grid.Column="7" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y03" Margin="0" Grid.Column="8" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y03" Margin="0" Grid.Column="9" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y03" Margin="0" Grid.Column="10" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y03" Margin="0" Grid.Column="11" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y03" Margin="0" Grid.Column="12" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y03" Margin="0" Grid.Column="13" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y03" Margin="0" Grid.Column="14" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y03" Margin="0" Grid.Column="15" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y03" Margin="0" Grid.Column="16" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y03" Margin="0" Grid.Column="17" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y03" Margin="0" Grid.Column="18" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y03" Margin="0" Grid.Column="19" Grid.Row="3" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y04" Margin="0" Grid.Column="0" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y04" Margin="0" Grid.Column="1" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y04" Margin="0" Grid.Column="2" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y04" Margin="0" Grid.Column="3" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y04" Margin="0" Grid.Column="4" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y04" Margin="0" Grid.Column="5" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y04" Margin="0" Grid.Column="6" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y04" Margin="0" Grid.Column="7" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y04" Margin="0" Grid.Column="8" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y04" Margin="0" Grid.Column="9" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y04" Margin="0" Grid.Column="10" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y04" Margin="0" Grid.Column="11" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y04" Margin="0" Grid.Column="12" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y04" Margin="0" Grid.Column="13" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y04" Margin="0" Grid.Column="14" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y04" Margin="0" Grid.Column="15" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y04" Margin="0" Grid.Column="16" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y04" Margin="0" Grid.Column="17" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y04" Margin="0" Grid.Column="18" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y04" Margin="0" Grid.Column="19" Grid.Row="4" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y05" Margin="0" Grid.Column="0" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y05" Margin="0" Grid.Column="1" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y05" Margin="0" Grid.Column="2" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y05" Margin="0" Grid.Column="3" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y05" Margin="0" Grid.Column="4" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y05" Margin="0" Grid.Column="5" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y05" Margin="0" Grid.Column="6" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y05" Margin="0" Grid.Column="7" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y05" Margin="0" Grid.Column="8" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y05" Margin="0" Grid.Column="9" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y05" Margin="0" Grid.Column="10" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y05" Margin="0" Grid.Column="11" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y05" Margin="0" Grid.Column="12" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y05" Margin="0" Grid.Column="13" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y05" Margin="0" Grid.Column="14" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y05" Margin="0" Grid.Column="15" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y05" Margin="0" Grid.Column="16" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y05" Margin="0" Grid.Column="17" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y05" Margin="0" Grid.Column="18" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y05" Margin="0" Grid.Column="19" Grid.Row="5" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y06" Margin="0" Grid.Column="0" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y06" Margin="0" Grid.Column="1" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y06" Margin="0" Grid.Column="2" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y06" Margin="0" Grid.Column="3" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y06" Margin="0" Grid.Column="4" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y06" Margin="0" Grid.Column="5" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y06" Margin="0" Grid.Column="6" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y06" Margin="0" Grid.Column="7" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y06" Margin="0" Grid.Column="8" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y06" Margin="0" Grid.Column="9" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y06" Margin="0" Grid.Column="10" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y06" Margin="0" Grid.Column="11" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y06" Margin="0" Grid.Column="12" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y06" Margin="0" Grid.Column="13" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y06" Margin="0" Grid.Column="14" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y06" Margin="0" Grid.Column="15" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y06" Margin="0" Grid.Column="16" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y06" Margin="0" Grid.Column="17" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y06" Margin="0" Grid.Column="18" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y06" Margin="0" Grid.Column="19" Grid.Row="6" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y07" Margin="0" Grid.Column="0" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y07" Margin="0" Grid.Column="1" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y07" Margin="0" Grid.Column="2" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y07" Margin="0" Grid.Column="3" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y07" Margin="0" Grid.Column="4" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y07" Margin="0" Grid.Column="5" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y07" Margin="0" Grid.Column="6" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y07" Margin="0" Grid.Column="7" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y07" Margin="0" Grid.Column="8" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y07" Margin="0" Grid.Column="9" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y07" Margin="0" Grid.Column="10" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y07" Margin="0" Grid.Column="11" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y07" Margin="0" Grid.Column="12" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y07" Margin="0" Grid.Column="13" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y07" Margin="0" Grid.Column="14" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y07" Margin="0" Grid.Column="15" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y07" Margin="0" Grid.Column="16" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y07" Margin="0" Grid.Column="17" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y07" Margin="0" Grid.Column="18" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y07" Margin="0" Grid.Column="19" Grid.Row="7" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y08" Margin="0" Grid.Column="0" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y08" Margin="0" Grid.Column="1" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y08" Margin="0" Grid.Column="2" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y08" Margin="0" Grid.Column="3" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y08" Margin="0" Grid.Column="4" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y08" Margin="0" Grid.Column="5" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y08" Margin="0" Grid.Column="6" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y08" Margin="0" Grid.Column="7" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y08" Margin="0" Grid.Column="8" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y08" Margin="0" Grid.Column="9" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y08" Margin="0" Grid.Column="10" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y08" Margin="0" Grid.Column="11" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y08" Margin="0" Grid.Column="12" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y08" Margin="0" Grid.Column="13" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y08" Margin="0" Grid.Column="14" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y08" Margin="0" Grid.Column="15" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y08" Margin="0" Grid.Column="16" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y08" Margin="0" Grid.Column="17" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y08" Margin="0" Grid.Column="18" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y08" Margin="0" Grid.Column="19" Grid.Row="8" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y09" Margin="0" Grid.Column="0" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y09" Margin="0" Grid.Column="1" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y09" Margin="0" Grid.Column="2" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y09" Margin="0" Grid.Column="3" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y09" Margin="0" Grid.Column="4" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y09" Margin="0" Grid.Column="5" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y09" Margin="0" Grid.Column="6" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y09" Margin="0" Grid.Column="7" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y09" Margin="0" Grid.Column="8" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y09" Margin="0" Grid.Column="9" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y09" Margin="0" Grid.Column="10" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y09" Margin="0" Grid.Column="11" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y09" Margin="0" Grid.Column="12" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y09" Margin="0" Grid.Column="13" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y09" Margin="0" Grid.Column="14" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y09" Margin="0" Grid.Column="15" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y09" Margin="0" Grid.Column="16" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y09" Margin="0" Grid.Column="17" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y09" Margin="0" Grid.Column="18" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y09" Margin="0" Grid.Column="19" Grid.Row="9" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y10" Margin="0" Grid.Column="0" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y10" Margin="0" Grid.Column="1" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y10" Margin="0" Grid.Column="2" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y10" Margin="0" Grid.Column="3" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y10" Margin="0" Grid.Column="4" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y10" Margin="0" Grid.Column="5" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y10" Margin="0" Grid.Column="6" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y10" Margin="0" Grid.Column="7" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y10" Margin="0" Grid.Column="8" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y10" Margin="0" Grid.Column="9" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y10" Margin="0" Grid.Column="10" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y10" Margin="0" Grid.Column="11" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y10" Margin="0" Grid.Column="12" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y10" Margin="0" Grid.Column="13" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y10" Margin="0" Grid.Column="14" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y10" Margin="0" Grid.Column="15" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y10" Margin="0" Grid.Column="16" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y10" Margin="0" Grid.Column="17" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y10" Margin="0" Grid.Column="18" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y10" Margin="0" Grid.Column="19" Grid.Row="10" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y11" Margin="0" Grid.Column="0" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y11" Margin="0" Grid.Column="1" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y11" Margin="0" Grid.Column="2" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y11" Margin="0" Grid.Column="3" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y11" Margin="0" Grid.Column="4" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y11" Margin="0" Grid.Column="5" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y11" Margin="0" Grid.Column="6" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y11" Margin="0" Grid.Column="7" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y11" Margin="0" Grid.Column="8" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y11" Margin="0" Grid.Column="9" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y11" Margin="0" Grid.Column="10" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y11" Margin="0" Grid.Column="11" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y11" Margin="0" Grid.Column="12" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y11" Margin="0" Grid.Column="13" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y11" Margin="0" Grid.Column="14" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y11" Margin="0" Grid.Column="15" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y11" Margin="0" Grid.Column="16" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y11" Margin="0" Grid.Column="17" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y11" Margin="0" Grid.Column="18" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y11" Margin="0" Grid.Column="19" Grid.Row="11" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y12" Margin="0" Grid.Column="0" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y12" Margin="0" Grid.Column="1" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y12" Margin="0" Grid.Column="2" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y12" Margin="0" Grid.Column="3" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y12" Margin="0" Grid.Column="4" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y12" Margin="0" Grid.Column="5" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y12" Margin="0" Grid.Column="6" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y12" Margin="0" Grid.Column="7" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y12" Margin="0" Grid.Column="8" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y12" Margin="0" Grid.Column="9" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y12" Margin="0" Grid.Column="10" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y12" Margin="0" Grid.Column="11" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y12" Margin="0" Grid.Column="12" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y12" Margin="0" Grid.Column="13" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y12" Margin="0" Grid.Column="14" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y12" Margin="0" Grid.Column="15" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y12" Margin="0" Grid.Column="16" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y12" Margin="0" Grid.Column="17" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y12" Margin="0" Grid.Column="18" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y12" Margin="0" Grid.Column="19" Grid.Row="12" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y13" Margin="0" Grid.Column="0" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y13" Margin="0" Grid.Column="1" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y13" Margin="0" Grid.Column="2" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y13" Margin="0" Grid.Column="3" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y13" Margin="0" Grid.Column="4" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y13" Margin="0" Grid.Column="5" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y13" Margin="0" Grid.Column="6" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y13" Margin="0" Grid.Column="7" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y13" Margin="0" Grid.Column="8" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y13" Margin="0" Grid.Column="9" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y13" Margin="0" Grid.Column="10" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y13" Margin="0" Grid.Column="11" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y13" Margin="0" Grid.Column="12" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y13" Margin="0" Grid.Column="13" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y13" Margin="0" Grid.Column="14" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y13" Margin="0" Grid.Column="15" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y13" Margin="0" Grid.Column="16" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y13" Margin="0" Grid.Column="17" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y13" Margin="0" Grid.Column="18" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y13" Margin="0" Grid.Column="19" Grid.Row="13" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y14" Margin="0" Grid.Column="0" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y14" Margin="0" Grid.Column="1" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y14" Margin="0" Grid.Column="2" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y14" Margin="0" Grid.Column="3" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y14" Margin="0" Grid.Column="4" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y14" Margin="0" Grid.Column="5" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y14" Margin="0" Grid.Column="6" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y14" Margin="0" Grid.Column="7" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y14" Margin="0" Grid.Column="8" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y14" Margin="0" Grid.Column="9" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y14" Margin="0" Grid.Column="10" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y14" Margin="0" Grid.Column="11" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y14" Margin="0" Grid.Column="12" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y14" Margin="0" Grid.Column="13" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y14" Margin="0" Grid.Column="14" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y14" Margin="0" Grid.Column="15" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y14" Margin="0" Grid.Column="16" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y14" Margin="0" Grid.Column="17" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y14" Margin="0" Grid.Column="18" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y14" Margin="0" Grid.Column="19" Grid.Row="14" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y15" Margin="0" Grid.Column="0" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y15" Margin="0" Grid.Column="1" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y15" Margin="0" Grid.Column="2" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y15" Margin="0" Grid.Column="3" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y15" Margin="0" Grid.Column="4" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y15" Margin="0" Grid.Column="5" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y15" Margin="0" Grid.Column="6" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y15" Margin="0" Grid.Column="7" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y15" Margin="0" Grid.Column="8" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y15" Margin="0" Grid.Column="9" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y15" Margin="0" Grid.Column="10" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y15" Margin="0" Grid.Column="11" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y15" Margin="0" Grid.Column="12" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y15" Margin="0" Grid.Column="13" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y15" Margin="0" Grid.Column="14" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y15" Margin="0" Grid.Column="15" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y15" Margin="0" Grid.Column="16" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y15" Margin="0" Grid.Column="17" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y15" Margin="0" Grid.Column="18" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y15" Margin="0" Grid.Column="19" Grid.Row="15" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y16" Margin="0" Grid.Column="0" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y16" Margin="0" Grid.Column="1" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y16" Margin="0" Grid.Column="2" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y16" Margin="0" Grid.Column="3" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y16" Margin="0" Grid.Column="4" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y16" Margin="0" Grid.Column="5" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y16" Margin="0" Grid.Column="6" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y16" Margin="0" Grid.Column="7" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y16" Margin="0" Grid.Column="8" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y16" Margin="0" Grid.Column="9" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y16" Margin="0" Grid.Column="10" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y16" Margin="0" Grid.Column="11" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y16" Margin="0" Grid.Column="12" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y16" Margin="0" Grid.Column="13" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y16" Margin="0" Grid.Column="14" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y16" Margin="0" Grid.Column="15" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y16" Margin="0" Grid.Column="16" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y16" Margin="0" Grid.Column="17" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y16" Margin="0" Grid.Column="18" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y16" Margin="0" Grid.Column="19" Grid.Row="16" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y17" Margin="0" Grid.Column="0" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y17" Margin="0" Grid.Column="1" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y17" Margin="0" Grid.Column="2" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y17" Margin="0" Grid.Column="3" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y17" Margin="0" Grid.Column="4" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y17" Margin="0" Grid.Column="5" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y17" Margin="0" Grid.Column="6" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y17" Margin="0" Grid.Column="7" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y17" Margin="0" Grid.Column="8" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y17" Margin="0" Grid.Column="9" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y17" Margin="0" Grid.Column="10" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y17" Margin="0" Grid.Column="11" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y17" Margin="0" Grid.Column="12" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y17" Margin="0" Grid.Column="13" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y17" Margin="0" Grid.Column="14" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y17" Margin="0" Grid.Column="15" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y17" Margin="0" Grid.Column="16" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y17" Margin="0" Grid.Column="17" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y17" Margin="0" Grid.Column="18" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y17" Margin="0" Grid.Column="19" Grid.Row="17" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y18" Margin="0" Grid.Column="0" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y18" Margin="0" Grid.Column="1" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y18" Margin="0" Grid.Column="2" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y18" Margin="0" Grid.Column="3" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y18" Margin="0" Grid.Column="4" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y18" Margin="0" Grid.Column="5" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y18" Margin="0" Grid.Column="6" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y18" Margin="0" Grid.Column="7" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y18" Margin="0" Grid.Column="8" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y18" Margin="0" Grid.Column="9" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y18" Margin="0" Grid.Column="10" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y18" Margin="0" Grid.Column="11" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y18" Margin="0" Grid.Column="12" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y18" Margin="0" Grid.Column="13" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y18" Margin="0" Grid.Column="14" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y18" Margin="0" Grid.Column="15" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y18" Margin="0" Grid.Column="16" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y18" Margin="0" Grid.Column="17" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y18" Margin="0" Grid.Column="18" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y18" Margin="0" Grid.Column="19" Grid.Row="18" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Canvas x:Name="canvas_x00_y19" Margin="0" Grid.Column="0" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x01_y19" Margin="0" Grid.Column="1" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x02_y19" Margin="0" Grid.Column="2" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x03_y19" Margin="0" Grid.Column="3" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x04_y19" Margin="0" Grid.Column="4" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x05_y19" Margin="0" Grid.Column="5" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x06_y19" Margin="0" Grid.Column="6" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x07_y19" Margin="0" Grid.Column="7" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x08_y19" Margin="0" Grid.Column="8" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x09_y19" Margin="0" Grid.Column="9" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x10_y19" Margin="0" Grid.Column="10" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x11_y19" Margin="0" Grid.Column="11" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x12_y19" Margin="0" Grid.Column="12" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x13_y19" Margin="0" Grid.Column="13" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x14_y19" Margin="0" Grid.Column="14" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x15_y19" Margin="0" Grid.Column="15" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x16_y19" Margin="0" Grid.Column="16" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x17_y19" Margin="0" Grid.Column="17" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x18_y19" Margin="0" Grid.Column="18" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+        <Canvas x:Name="canvas_x19_y19" Margin="0" Grid.Column="19" Grid.Row="19" MouseLeftButtonDown="pictureBox_Click"/>
+
+        <Label x:Name="label_sts1" Content="Label" Margin="0" Grid.Row="20" Grid.ColumnSpan="20"/>
+        <Label x:Name="label_sts2" Content="Label" Margin="0" Grid.Row="21" Grid.ColumnSpan="20"/>
+        <Button x:Name="btn_reset" Grid.ColumnSpan="10" Content="RESET" Margin="0" Grid.Row="22" Click="btn_reset_Click"/>
+        <Button x:Name="btn_setting" Grid.ColumnSpan="10" Content="SETTING" Margin="0" Grid.Row="22" Grid.Column="10" Click="btn_setting_Click"/>
     </Grid>
 </Window>

@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -68,6 +70,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\HslColor.cs" />
+    <Compile Include="Model\MyReversi.cs" />
+    <Compile Include="Model\ReversiAnz.cs" />
+    <Compile Include="Model\ReversiConst.cs" />
+    <Compile Include="Model\ReversiHistory.cs" />
+    <Compile Include="Model\ReversiPlay.cs" />
+    <Compile Include="Model\ReversiPoint.cs" />
+    <Compile Include="Model\ReversiSetting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
