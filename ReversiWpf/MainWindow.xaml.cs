@@ -195,75 +195,74 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		public void appInit()
 		{
-/*
-			// *** tableLayoutPanelの最適化 *** //
-			Size formSize = this.Size;
-			Size tblSize = this.tableLayoutPanel1.Size;
-			int startX = 45;
-			int startY = 45;
-			// *** 各種オフセットを設定 *** //
-			formSize.ActualHeight  = this.label1.Top;
-			formSize.ActualHeight -= startX << 1;
-			formSize.ActualWidth  -= startY << 1;
-			int refSize = formSize.ActualHeight;
-			if (formSize.ActualWidth < refSize) refSize = formSize.ActualWidth;
-			double tmpD = (double)refSize / this.m_AppSettings.mMasuCnt;
-			refSize = (int)Math.Ceiling(tmpD);
-			refSize *= this.m_AppSettings.mMasuCnt;
+            //			// *** tableLayoutPanelの最適化 *** //
+            //			Size formSize = this.Size;
+            //			Size tblSize = this.tableLayoutPanel1.Size;
+            //			int startX = 45;
+            //			int startY = 45;
+            //			// *** 各種オフセットを設定 *** //
+            //			formSize.ActualHeight  = this.label1.Top;
+            //			formSize.ActualHeight -= startX << 1;
+            //			formSize.ActualWidth  -= startY << 1;
+            //			int refSize = formSize.ActualHeight;
+            //			if (formSize.ActualWidth < refSize) refSize = formSize.ActualWidth;
+            //			double tmpD = (double)refSize / this.m_AppSettings.mMasuCnt;
+            //			refSize = (int)Math.Ceiling(tmpD);
+            //			refSize *= this.m_AppSettings.mMasuCnt;
+            //
+            //			this.tableLayoutPanel1.Top = startX;
+            //			this.tableLayoutPanel1.Left = ( ( formSize.ActualWidth + ( startY << 1 ) ) - refSize ) >> 1;
+            //			tblSize.ActualHeight = refSize;
+            //			tblSize.ActualWidth = refSize;
+            //			this.tableLayoutPanel1.ActualHeight = refSize;
+            //			this.tableLayoutPanel1.ActualWidth = refSize;
+            System.Windows.Size tblSize = new System.Windows.Size();
+			tblSize.Width = this.grid_reversi_fields.ActualWidth;
+			tblSize.Height = this.grid_reversi_fields.ActualHeight;
 
-			this.tableLayoutPanel1.Top = startX;
-			this.tableLayoutPanel1.Left = ( ( formSize.ActualWidth + ( startY << 1 ) ) - refSize ) >> 1;
-			tblSize.ActualHeight = refSize;
-			tblSize.ActualWidth = refSize;
-			this.tableLayoutPanel1.ActualHeight = refSize;
-			this.tableLayoutPanel1.ActualWidth = refSize;
-
-			Size curSize = tblSize;
-			float cellSizeAll = (float)curSize.ActualHeight;
-			if (curSize.ActualWidth < cellSizeAll) cellSizeAll = (float)curSize.ActualWidth;
+            System.Windows.Size curSize = tblSize;
+			float cellSizeAll = (float)curSize.Height;
+			if (curSize.Width < cellSizeAll) cellSizeAll = (float)curSize.Width;
 			float cellSize = cellSizeAll / (float)this.m_AppSettings.mMasuCnt;
 			float per = cellSize / cellSizeAll * 100F;
-			this.tableLayoutPanel1.Visible = false;
+//			this.tableLayoutPanel1.Visible = false;
 			for (int i = 0; i < ReversiConst.DEF_MASU_CNT_MAX_VAL;i++)
 			{
 				for (int j = 0; j < ReversiConst.DEF_MASU_CNT_MAX_VAL;j++)
 				{
-					int curIdx = (i * ReversiConst.DEF_MASU_CNT_MAX_VAL) + j + 1;
-					string curIdxStr = "pictureBox" + curIdx.ToString();
-					Control c = this.tableLayoutPanel1.Controls[curIdxStr];
+					UIElement c = (UIElement)this.grid_reversi_fields.Children.Cast<UIElement>().First(e => Grid.GetRow(e) == i && Grid.GetColumn(e) == j);
 					if (c != null)
 					{
 						if( i < this.m_AppSettings.mMasuCnt && j < this.m_AppSettings.mMasuCnt)
 						{
-							c.Visible = true;
+							c.Visibility = Visibility.Visible;
 						}
 						else
 						{
-							c.Visible = false;
+							c.Visibility = Visibility.Collapsed;
 						}
 					}
 					// *** テーブルの列サイズを調整 *** //
 					if(j < this.m_AppSettings.mMasuCnt)
 					{
-						this.tableLayoutPanel1.ColumnStyles[j] = new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, cellSize);
-					}
+                        this.grid_reversi_fields.ColumnDefinitions[j].Width = new GridLength(2.0, GridUnitType.Star);
+                    }
 					else
 					{
-						this.tableLayoutPanel1.ColumnStyles[j] = new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 0F);
+                        this.grid_reversi_fields.ColumnDefinitions[j].Width = new GridLength(0.0, GridUnitType.Star);
 					}
 				}
 				// *** テーブルの行サイズを調整 *** //
 				if(i < this.m_AppSettings.mMasuCnt)
 				{
-					this.tableLayoutPanel1.RowStyles[i] = new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, cellSize);
+                    this.grid_reversi_fields.RowDefinitions[i].Height = new GridLength(2.0, GridUnitType.Star);
 				}
 				else
 				{
-					this.tableLayoutPanel1.RowStyles[i] = new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 0F);
-				}
-			}
-			this.tableLayoutPanel1.Visible = true;
-*/
+                    this.grid_reversi_fields.RowDefinitions[i].Height = new GridLength(0.0, GridUnitType.Star);
+                }
+            }
+//			this.tableLayoutPanel1.Visible = true;
 		}
 
 		////////////////////////////////////////////////////////////////////////////////

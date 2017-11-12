@@ -28,9 +28,9 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -476,7 +476,7 @@
 
         <Label x:Name="label_sts1" Content="Label" Margin="0" Grid.Row="20" Grid.ColumnSpan="20"/>
         <Label x:Name="label_sts2" Content="Label" Margin="0" Grid.Row="21" Grid.ColumnSpan="20"/>
-        <Button x:Name="btn_reset" Grid.ColumnSpan="10" Content="RESET" Margin="0" Grid.Row="22" Click="btn_reset_Click"/>
-        <Button x:Name="btn_setting" Grid.ColumnSpan="10" Content="SETTING" Margin="0" Grid.Row="22" Grid.Column="10" Click="btn_setting_Click"/>
+        <Button x:Name="btn_reset" Grid.ColumnSpan="1" Content="RESET" Margin="0" Grid.Row="22" Click="btn_reset_Click"/>
+        <Button x:Name="btn_setting" Grid.ColumnSpan="1" Content="SETTING" Margin="0" Grid.Row="22" Grid.Column="1" Click="btn_setting_Click"/>
     </Grid>
 </Window>
