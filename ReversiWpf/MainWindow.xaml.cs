@@ -21,6 +21,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -53,10 +54,10 @@ namespace ReversiWpf
 		public ReversiSetting m_AppSettings;								//!< アプリ設定
 		public ReversiPlay m_ReversiPlay;									//!< リバーシ本体
 		private static System.Timers.Timer aTimer;							//!< タイマー
-		private System.Drawing.Size oldSize;                                //!< リサイズ前のサイズ
+		private System.Drawing.Size oldSize;								//!< リサイズ前のサイズ
 
 		[System.Runtime.InteropServices.DllImport("gdi32.dll")]
-		public static extern bool DeleteObject(IntPtr hObject);             // gdi32.dllのDeleteObjectメソッドの使用を宣言する。
+		public static extern bool DeleteObject(IntPtr hObject);				//!< gdi32.dllのDeleteObjectメソッドの使用を宣言する。
 
 		////////////////////////////////////////////////////////////////////////////////
 		///	@brief			コンストラクタ
@@ -195,37 +196,43 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		public void appInit()
 		{
-            //			// *** tableLayoutPanelの最適化 *** //
-            //			Size formSize = this.Size;
-            //			Size tblSize = this.tableLayoutPanel1.Size;
-            //			int startX = 45;
-            //			int startY = 45;
-            //			// *** 各種オフセットを設定 *** //
-            //			formSize.ActualHeight  = this.label1.Top;
-            //			formSize.ActualHeight -= startX << 1;
-            //			formSize.ActualWidth  -= startY << 1;
-            //			int refSize = formSize.ActualHeight;
-            //			if (formSize.ActualWidth < refSize) refSize = formSize.ActualWidth;
-            //			double tmpD = (double)refSize / this.m_AppSettings.mMasuCnt;
-            //			refSize = (int)Math.Ceiling(tmpD);
-            //			refSize *= this.m_AppSettings.mMasuCnt;
-            //
-            //			this.tableLayoutPanel1.Top = startX;
-            //			this.tableLayoutPanel1.Left = ( ( formSize.ActualWidth + ( startY << 1 ) ) - refSize ) >> 1;
-            //			tblSize.ActualHeight = refSize;
-            //			tblSize.ActualWidth = refSize;
-            //			this.tableLayoutPanel1.ActualHeight = refSize;
-            //			this.tableLayoutPanel1.ActualWidth = refSize;
-            System.Windows.Size tblSize = new System.Windows.Size();
+			// *** tableLayoutPanelの最適化 *** //
+			System.Windows.Size formSize = new System.Windows.Size();
+			formSize.Width = this.ActualWidth;
+			formSize.Height = this.ActualHeight;
+			System.Windows.Size tblSize = new System.Windows.Size();
 			tblSize.Width = this.grid_reversi_fields.ActualWidth;
 			tblSize.Height = this.grid_reversi_fields.ActualHeight;
+/*
+			int startX = 45;
+			int startY = 45;
+            // *** 各種オフセットを設定 *** //
+            System.Windows.Point pt1 = this.PointToScreen(new System.Windows.Point(0.0d, 0.0d));
+            System.Windows.Point pt2 = this.label_sts1.PointToScreen(new System.Windows.Point(0.0d, 0.0d));
+            formSize.Height  = (int)pt2.Y - pt1.Y;
+			formSize.Height -= startX << 1;
+			formSize.Width  -= startY << 1;
+			int refSize = (int)formSize.Height;
+			if (formSize.Width < refSize) refSize = (int)formSize.Width;
+			double tmpD = (double)refSize / this.m_AppSettings.mMasuCnt;
+			refSize = (int)Math.Ceiling(tmpD);
+			refSize *= this.m_AppSettings.mMasuCnt;
 
-            System.Windows.Size curSize = tblSize;
+//			this.grid_reversi_fields.Top = startX;
+//			this.grid_reversi_fields.Left = ( ( (int)formSize.Width + ( startY << 1 ) ) - refSize ) >> 1;
+			Thickness tk = new Thickness(startX, ( ( (int)formSize.Width + ( startY << 1 ) ) - refSize ) >> 1, refSize, refSize); 
+			this.grid_reversi_fields.Margin = tk;
+			tblSize.Height = refSize;
+			tblSize.Width = refSize;
+			this.grid_reversi_fields.Height = refSize;
+			this.grid_reversi_fields.Width = refSize;
+*/
+			System.Windows.Size curSize = tblSize;
 			float cellSizeAll = (float)curSize.Height;
 			if (curSize.Width < cellSizeAll) cellSizeAll = (float)curSize.Width;
 			float cellSize = cellSizeAll / (float)this.m_AppSettings.mMasuCnt;
 			float per = cellSize / cellSizeAll * 100F;
-//			this.tableLayoutPanel1.Visible = false;
+			this.grid_reversi_fields.Visibility = Visibility.Collapsed;
 			for (int i = 0; i < ReversiConst.DEF_MASU_CNT_MAX_VAL;i++)
 			{
 				for (int j = 0; j < ReversiConst.DEF_MASU_CNT_MAX_VAL;j++)
@@ -245,24 +252,24 @@ namespace ReversiWpf
 					// *** テーブルの列サイズを調整 *** //
 					if(j < this.m_AppSettings.mMasuCnt)
 					{
-                        this.grid_reversi_fields.ColumnDefinitions[j].Width = new GridLength(2.0, GridUnitType.Star);
-                    }
+						this.grid_reversi_fields.ColumnDefinitions[j].Width = new GridLength(2.0, GridUnitType.Star);
+					}
 					else
 					{
-                        this.grid_reversi_fields.ColumnDefinitions[j].Width = new GridLength(0.0, GridUnitType.Star);
+						this.grid_reversi_fields.ColumnDefinitions[j].Width = new GridLength(0.0, GridUnitType.Star);
 					}
 				}
 				// *** テーブルの行サイズを調整 *** //
 				if(i < this.m_AppSettings.mMasuCnt)
 				{
-                    this.grid_reversi_fields.RowDefinitions[i].Height = new GridLength(2.0, GridUnitType.Star);
+					this.grid_reversi_fields.RowDefinitions[i].Height = new GridLength(2.0, GridUnitType.Star);
 				}
 				else
 				{
-                    this.grid_reversi_fields.RowDefinitions[i].Height = new GridLength(0.0, GridUnitType.Star);
-                }
-            }
-//			this.tableLayoutPanel1.Visible = true;
+					this.grid_reversi_fields.RowDefinitions[i].Height = new GridLength(0.0, GridUnitType.Star);
+				}
+			}
+			this.grid_reversi_fields.Visibility = Visibility.Visible;
 		}
 
 		////////////////////////////////////////////////////////////////////////////////
@@ -543,9 +550,85 @@ namespace ReversiWpf
 
 		}
 
-        private void canvas_x00_y00_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+/*
+        [StructLayout(LayoutKind.Sequential)]
+        public struct RECT
         {
-
+            public int left;
+            public int top;
+            public int right;
+            public int bottom;
         }
+
+        //using System.Runtime.InteropServices;
+        const double fixedRate = (double)800 / 700;
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            base.OnSourceInitialized(e);
+            IntPtr handle = (new WindowInteropHelper(this)).Handle;
+            HwndSource hwndSource =
+                            (HwndSource)HwndSource.FromVisual(this);
+            hwndSource.AddHook(WndHookProc);
+        }
+
+        const int WM_SIZING = 0x214;
+        const int WMSZ_LEFT = 1;
+        const int WMSZ_RIGHT = 2;
+        const int WMSZ_TOP = 3;
+        const int WMSZ_TOPLEFT = 4;
+        const int WMSZ_TOPRIGHT = 5;
+        const int WMSZ_BOTTOM = 6;
+        const int WMSZ_BOTTOMLEFT = 7;
+        const int WMSZ_BOTTOMRIGHT = 8;
+
+
+        private IntPtr WndHookProc(
+            IntPtr hwnd, int msg, IntPtr wParam,
+            IntPtr lParam, ref bool handled)
+        {
+            if (msg == WM_SIZING)
+            {
+                RECT r = (RECT)Marshal.PtrToStructure(
+                                          lParam, typeof(RECT));
+                RECT recCopy = r;
+                int w = r.right - r.left;
+                int h = r.bottom - r.top;
+                int dw;
+                int dh;
+                dw = (int)(h * fixedRate + 0.5) - w;
+                dh = (int)(w / fixedRate + 0.5) - h;
+
+                switch (wParam.ToInt32())
+                {
+                    case WMSZ_TOP:
+                    case WMSZ_BOTTOM:
+                        r.right += dw;
+                        break;
+                    case WMSZ_LEFT:
+                    case WMSZ_RIGHT:
+                        r.bottom += dh;
+                        break;
+                    case WMSZ_TOPLEFT:
+                        if (dw > 0) r.left -= dw;
+                        else r.top -= dh;
+                        break;
+                    case WMSZ_TOPRIGHT:
+                        if (dw > 0) r.right += dw;
+                        else r.top -= dh;
+                        break;
+                    case WMSZ_BOTTOMLEFT:
+                        if (dw > 0) r.left -= dw;
+                        else r.bottom += dh;
+                        break;
+                    case WMSZ_BOTTOMRIGHT:
+                        if (dw > 0) r.right += dw;
+                        else r.bottom += dh;
+                        break;
+                }
+                Marshal.StructureToPtr(r, lParam, false);
+            }
+            return IntPtr.Zero;
+        }
+*/
     }
 }
