@@ -1,0 +1,63 @@
+﻿<Window x:Class="ReversiWpf.SettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReversiWpf"
+        mc:Ignorable="d"
+        Title="SettingWindow" Height="331.896" Width="581.035">
+    <Grid Margin="0,0,2,0">
+        <GroupBox Header="対戦人数" HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="129">
+            <RadioButton x:Name="radioButtonMode1" Content="一人" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonMode"/>
+        </GroupBox>
+        <RadioButton x:Name="radioButtonMode2" Content="二人" HorizontalAlignment="Left" Margin="82,37,0,0" VerticalAlignment="Top" GroupName="radioButtonMode"/>
+        <GroupBox Header="CPU強さ" HorizontalAlignment="Left" Height="53" Margin="148,10,0,0" VerticalAlignment="Top" Width="185">
+            <RadioButton x:Name="radioButtonType1" Content="弱い" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonType"/>
+        </GroupBox>
+        <RadioButton x:Name="radioButtonType2" Content="普通" HorizontalAlignment="Left" Margin="220,37,0,0" VerticalAlignment="Top" GroupName="radioButtonType"/>
+        <RadioButton x:Name="radioButtonType3" Content="強い" HorizontalAlignment="Left" Margin="276,37,0,0" VerticalAlignment="Top" GroupName="radioButtonType"/>
+        <GroupBox Header="色" HorizontalAlignment="Left" Height="53" Margin="342,10,0,0" VerticalAlignment="Top" Width="169">
+            <RadioButton x:Name="radioButtonPlayer1" Content="プレイヤー1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonPlayer"/>
+        </GroupBox>
+        <RadioButton x:Name="radioButtonPlayer2" Content="プレイヤー2" HorizontalAlignment="Left" Margin="434,37,0,0" VerticalAlignment="Top" GroupName="radioButtonPlayer"/>
+        <GroupBox Header="アシストモード" HorizontalAlignment="Left" Height="53" Margin="10,68,0,0" VerticalAlignment="Top" Width="129">
+            <RadioButton x:Name="radioButtonAssist1" Content="OFF" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonAssist"/>
+        </GroupBox>
+        <RadioButton x:Name="radioButtonAssist2" Content="ON" HorizontalAlignment="Left" Margin="82,95,0,0" VerticalAlignment="Top" GroupName="radioButtonAssist"/>
+        <GroupBox Header="ゲームスピード" HorizontalAlignment="Left" Height="53" Margin="148,69,0,0" VerticalAlignment="Top" Width="185">
+            <RadioButton x:Name="radioButtonGameSpd1" Content="速い" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonGameSpd"/>
+        </GroupBox>
+        <RadioButton x:Name="radioButtonGameSpd2" Content="普通" HorizontalAlignment="Left" Margin="220,96,0,0" VerticalAlignment="Top" GroupName="radioButtonGameSpd"/>
+        <RadioButton x:Name="radioButtonGameSpd3" Content="遅い" HorizontalAlignment="Left" Margin="276,96,0,0" VerticalAlignment="Top" GroupName="radioButtonGameSpd"/>
+        <GroupBox Header="ゲーム終了アニメ" HorizontalAlignment="Left" Height="53" Margin="345,69,0,0" VerticalAlignment="Top" Width="129">
+            <RadioButton x:Name="radioButtonEndAnim1" Content="OFF" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonEndAnim"/>
+        </GroupBox>
+        <RadioButton x:Name="radioButtonEndAnim2" Content="ON" HorizontalAlignment="Left" Margin="417,96,0,0" VerticalAlignment="Top" GroupName="radioButtonEndAnim"/>
+        <GroupBox Header="縦横マス数" HorizontalAlignment="Left" Height="53" Margin="10,127,0,0" VerticalAlignment="Top" Width="307">
+            <RadioButton x:Name="radioButtonMasuCntMenu1" Content="6" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu"/>
+        </GroupBox>
+        <RadioButton x:Name="radioButtonMasuCntMenu2" Content="8" HorizontalAlignment="Left" Margin="61,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu"/>
+        <GroupBox Header="アシストモード" HorizontalAlignment="Left" Height="53" Margin="10,68,0,0" VerticalAlignment="Top" Width="129">
+            <RadioButton x:Name="radioButtonAssist4" Content="OFF" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonAssist"/>
+        </GroupBox>
+        <RadioButton x:Name="radioButtonAssist2_Copy1" Content="ON" HorizontalAlignment="Left" Margin="82,95,0,0" VerticalAlignment="Top" GroupName="radioButtonAssist"/>
+        <RadioButton x:Name="radioButtonMasuCntMenu3" Content="10" HorizontalAlignment="Left" Margin="93,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu" RenderTransformOrigin="2.641,0.462"/>
+        <RadioButton x:Name="radioButtonMasuCntMenu4" Content="12" HorizontalAlignment="Left" Margin="130,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu" RenderTransformOrigin="3.848,0.979"/>
+        <RadioButton x:Name="radioButtonMasuCntMenu5" Content="14" HorizontalAlignment="Left" Margin="167,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu" RenderTransformOrigin="3.848,0.979"/>
+        <RadioButton x:Name="radioButtonMasuCntMenu6" Content="16" HorizontalAlignment="Left" Margin="204,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu" RenderTransformOrigin="3.848,0.979"/>
+        <RadioButton x:Name="radioButtonMasuCntMenu7" Content="18" HorizontalAlignment="Left" Margin="241,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu" RenderTransformOrigin="3.848,0.979"/>
+        <RadioButton x:Name="radioButtonMasuCntMenu8" Content="20" HorizontalAlignment="Left" Margin="278,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu" RenderTransformOrigin="3.848,0.979"/>
+        <Button x:Name="buttonCancel" Content="キャンセル" HorizontalAlignment="Left" Margin="486,271,0,0" VerticalAlignment="Top" Width="75" Click="buttonCancel_Click"/>
+        <Button x:Name="buttonSave" Content="保存" HorizontalAlignment="Left" Margin="399,271,0,0" VerticalAlignment="Top" Width="75" Click="buttonSave_Click"/>
+        <Button x:Name="buttonDefault" Content="デフォルト設定に戻す" HorizontalAlignment="Left" Margin="268,271,0,0" VerticalAlignment="Top" Width="116" Click="buttonDefault_Click"/>
+        <Canvas x:Name="pictureBoxPlayerColor1" HorizontalAlignment="Left" Height="41" Margin="44,214,0,0" VerticalAlignment="Top" Width="38" Background="Black" MouseLeftButtonDown="pictureBoxPlayerColor1_MouseLeftButtonDown"/>
+        <Label Content="プレイヤー1のコマの色" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
+        <Canvas x:Name="pictureBoxPlayerColor2" HorizontalAlignment="Left" Height="41" Margin="161,217,0,0" VerticalAlignment="Top" Width="38" Background="White" MouseLeftButtonDown="pictureBoxPlayerColor2_MouseLeftButtonDown"/>
+        <Label Content="プレイヤー2のコマの色" HorizontalAlignment="Left" Margin="127,188,0,0" VerticalAlignment="Top"/>
+        <Canvas x:Name="pictureBoxBackGroundColor" HorizontalAlignment="Left" Height="41" Margin="276,217,0,0" VerticalAlignment="Top" Width="38" Background="Lime" AutomationProperties.IsRowHeader="True" MouseLeftButtonDown="pictureBoxBackGroundColor_MouseLeftButtonDown"/>
+        <Label Content="マス背景の色" HorizontalAlignment="Left" Margin="257,188,0,0" VerticalAlignment="Top"/>
+        <Canvas x:Name="pictureBoxBorderColor" HorizontalAlignment="Left" Height="41" Margin="358,217,0,0" VerticalAlignment="Top" Width="38" Background="Black" AutomationProperties.IsRowHeader="True" MouseLeftButtonDown="pictureBoxBorderColor_MouseLeftButtonDown"/>
+        <Label Content="マス枠の色" HorizontalAlignment="Left" Margin="345,188,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
