@@ -547,7 +547,20 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		private void btn_setting_Click(object sender, RoutedEventArgs e)
 		{
+			System.IO.Directory.CreateDirectory(System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\Y.Y Magic\\ReversiForm");
+			string setPath = System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\Y.Y Magic\\ReversiForm\\" + "AppSetting.xml";
 
+			SettingWindow form = new SettingWindow(this.m_AppSettings);
+			form.ShowDialog();
+
+			this.m_AppSettings = form.mSetting;
+			SaveSettingXml(setPath,ref this.m_AppSettings);
+
+			// *** フォームが必要なくなったところで、Disposeを呼び出す *** //
+			this.m_ReversiPlay.mSetting = this.m_AppSettings;
+			this.appInit();
+			Task newTask = new Task( () => { this.m_ReversiPlay.reset(); } );
+			newTask.Start();
 		}
 
 /*
