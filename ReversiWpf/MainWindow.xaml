@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ReversiWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="900" Width="700">
+        Title="Reversi" Height="900" Width="700">
     <Grid x:Name="grid_reversi_fields">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>

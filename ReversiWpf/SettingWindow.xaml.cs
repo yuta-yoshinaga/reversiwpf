@@ -345,7 +345,17 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		private void pictureBoxPlayerColor1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 		{
-
+			// ColorDialogクラスのインスタンスを作成
+			System.Windows.Forms.ColorDialog cd = new System.Windows.Forms.ColorDialog();
+			// はじめに選択されている色を設定
+			SolidColorBrush work = (SolidColorBrush)pictureBoxPlayerColor1.Background;
+			cd.Color = System.Drawing.Color.FromArgb(work.Color.A,work.Color.R,work.Color.G,work.Color.B);
+			// ダイアログを表示する
+			if (cd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+			{
+				// 選択された色の取得
+				pictureBoxPlayerColor1.Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(cd.Color.A,cd.Color.R,cd.Color.G,cd.Color.B));
+			}
 		}
 
 		////////////////////////////////////////////////////////////////////////////////
@@ -360,7 +370,17 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		private void pictureBoxPlayerColor2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 		{
-
+			// ColorDialogクラスのインスタンスを作成
+			System.Windows.Forms.ColorDialog cd = new System.Windows.Forms.ColorDialog();
+			// はじめに選択されている色を設定
+			SolidColorBrush work = (SolidColorBrush)pictureBoxPlayerColor2.Background;
+			cd.Color = System.Drawing.Color.FromArgb(work.Color.A,work.Color.R,work.Color.G,work.Color.B);
+			// ダイアログを表示する
+			if (cd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+			{
+				// 選択された色の取得
+				pictureBoxPlayerColor2.Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(cd.Color.A,cd.Color.R,cd.Color.G,cd.Color.B));
+			}
 		}
 
 		////////////////////////////////////////////////////////////////////////////////
@@ -375,7 +395,17 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		private void pictureBoxBackGroundColor_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 		{
-
+			// ColorDialogクラスのインスタンスを作成
+			System.Windows.Forms.ColorDialog cd = new System.Windows.Forms.ColorDialog();
+			// はじめに選択されている色を設定
+			SolidColorBrush work = (SolidColorBrush)pictureBoxBackGroundColor.Background;
+			cd.Color = System.Drawing.Color.FromArgb(work.Color.A,work.Color.R,work.Color.G,work.Color.B);
+			// ダイアログを表示する
+			if (cd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+			{
+				// 選択された色の取得
+				pictureBoxBackGroundColor.Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(cd.Color.A,cd.Color.R,cd.Color.G,cd.Color.B));
+			}
 		}
 
 		////////////////////////////////////////////////////////////////////////////////
@@ -390,7 +420,17 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		private void pictureBoxBorderColor_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 		{
-
+			// ColorDialogクラスのインスタンスを作成
+			System.Windows.Forms.ColorDialog cd = new System.Windows.Forms.ColorDialog();
+			// はじめに選択されている色を設定
+			SolidColorBrush work = (SolidColorBrush)pictureBoxBorderColor.Background;
+			cd.Color = System.Drawing.Color.FromArgb(work.Color.A,work.Color.R,work.Color.G,work.Color.B);
+			// ダイアログを表示する
+			if (cd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+			{
+				// 選択された色の取得
+				pictureBoxBorderColor.Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(cd.Color.A,cd.Color.R,cd.Color.G,cd.Color.B));
+			}
 		}
 
 		////////////////////////////////////////////////////////////////////////////////
