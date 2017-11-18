@@ -547,8 +547,8 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		private void btn_setting_Click(object sender, RoutedEventArgs e)
 		{
-			System.IO.Directory.CreateDirectory(System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\Y.Y Magic\\ReversiForm");
-			string setPath = System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\Y.Y Magic\\ReversiForm\\" + "AppSetting.xml";
+			System.IO.Directory.CreateDirectory(System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\Y.Y Magic\\ReversiWpf");
+			string setPath = System.Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\Y.Y Magic\\ReversiWpf\\" + "AppSetting.xml";
 
 			SettingWindow form = new SettingWindow(this.m_AppSettings);
 			form.ShowDialog();

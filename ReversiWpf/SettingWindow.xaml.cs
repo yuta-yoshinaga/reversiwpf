@@ -75,183 +75,181 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		private void reflectSettingForm()
 		{
-/*
 			// *** 現在のモード *** //
 			if(mSetting.mMode == ReversiConst.DEF_MODE_ONE)
 			{
-				radioButtonMode1.Checked = true;
-				radioButtonMode2.Checked = false;
+				radioButtonMode1.IsChecked = true;
+				radioButtonMode2.IsChecked = false;
 			}
 			else
 			{
-				radioButtonMode1.Checked = false;
-				radioButtonMode2.Checked = true;
+				radioButtonMode1.IsChecked = false;
+				radioButtonMode2.IsChecked = true;
 			}
 			// *** 現在のタイプ *** //
 			if(mSetting.mType == ReversiConst.DEF_TYPE_EASY)
 			{
-				radioButtonType1.Checked = true;
-				radioButtonType2.Checked = false;
-				radioButtonType3.Checked = false;
+				radioButtonType1.IsChecked = true;
+				radioButtonType2.IsChecked = false;
+				radioButtonType3.IsChecked = false;
 			}
 			else if(mSetting.mType == ReversiConst.DEF_TYPE_NOR)
 			{
-				radioButtonType1.Checked = false;
-				radioButtonType2.Checked = true;
-				radioButtonType3.Checked = false;
+				radioButtonType1.IsChecked = false;
+				radioButtonType2.IsChecked = true;
+				radioButtonType3.IsChecked = false;
 			}
 			else
 			{
-				radioButtonType1.Checked = false;
-				radioButtonType2.Checked = false;
-				radioButtonType3.Checked = true;
+				radioButtonType1.IsChecked = false;
+				radioButtonType2.IsChecked = false;
+				radioButtonType3.IsChecked = true;
 			}
 			// *** プレイヤーの色 *** //
 			if(mSetting.mPlayer == ReversiConst.REVERSI_STS_BLACK)
 			{
-				radioButtonPlayer1.Checked = true;
-				radioButtonPlayer2.Checked = false;
+				radioButtonPlayer1.IsChecked = true;
+				radioButtonPlayer2.IsChecked = false;
 			}
 			else
 			{
-				radioButtonPlayer1.Checked = false;
-				radioButtonPlayer2.Checked = true;
+				radioButtonPlayer1.IsChecked = false;
+				radioButtonPlayer2.IsChecked = true;
 			}
 			// *** アシスト *** //
 			if(mSetting.mAssist == ReversiConst.DEF_ASSIST_OFF)
 			{
-				radioButtonAssist1.Checked = true;
-				radioButtonAssist2.Checked = false;
+				radioButtonAssist1.IsChecked = true;
+				radioButtonAssist2.IsChecked = false;
 			}
 			else
 			{
-				radioButtonAssist1.Checked = false;
-				radioButtonAssist2.Checked = true;
+				radioButtonAssist1.IsChecked = false;
+				radioButtonAssist2.IsChecked = true;
 			}
 			// *** ゲームスピード *** //
 			if(mSetting.mGameSpd == ReversiConst.DEF_GAME_SPD_FAST)
 			{
-				radioButtonGameSpd1.Checked = true;
-				radioButtonGameSpd2.Checked = false;
-				radioButtonGameSpd3.Checked = false;
+				radioButtonGameSpd1.IsChecked = true;
+				radioButtonGameSpd2.IsChecked = false;
+				radioButtonGameSpd3.IsChecked = false;
 			}
 			else if(mSetting.mGameSpd == ReversiConst.DEF_GAME_SPD_MID)
 			{
-				radioButtonGameSpd1.Checked = false;
-				radioButtonGameSpd2.Checked = true;
-				radioButtonGameSpd3.Checked = false;
+				radioButtonGameSpd1.IsChecked = false;
+				radioButtonGameSpd2.IsChecked = true;
+				radioButtonGameSpd3.IsChecked = false;
 			}
 			else
 			{
-				radioButtonGameSpd1.Checked = false;
-				radioButtonGameSpd2.Checked = false;
-				radioButtonGameSpd3.Checked = true;
+				radioButtonGameSpd1.IsChecked = false;
+				radioButtonGameSpd2.IsChecked = false;
+				radioButtonGameSpd3.IsChecked = true;
 			}
 			// *** ゲーム終了アニメーション *** //
 			if(mSetting.mEndAnim == ReversiConst.DEF_END_ANIM_OFF)
 			{
-				radioButtonEndAnim1.Checked = true;
-				radioButtonEndAnim2.Checked = false;
+				radioButtonEndAnim1.IsChecked = true;
+				radioButtonEndAnim2.IsChecked = false;
 			}
 			else
 			{
-				radioButtonEndAnim1.Checked = false;
-				radioButtonEndAnim2.Checked = true;
+				radioButtonEndAnim1.IsChecked = false;
+				radioButtonEndAnim2.IsChecked = true;
 			}
 			// *** マスの数 *** //
 			if(mSetting.mMasuCntMenu == ReversiConst.DEF_MASU_CNT_6)
 			{
-				radioButtonMasuCntMenu1.Checked = true;
-				radioButtonMasuCntMenu2.Checked = false;
-				radioButtonMasuCntMenu3.Checked = false;
-				radioButtonMasuCntMenu4.Checked = false;
-				radioButtonMasuCntMenu5.Checked = false;
-				radioButtonMasuCntMenu6.Checked = false;
-				radioButtonMasuCntMenu7.Checked = false;
-				radioButtonMasuCntMenu8.Checked = false;
+				radioButtonMasuCntMenu1.IsChecked = true;
+				radioButtonMasuCntMenu2.IsChecked = false;
+				radioButtonMasuCntMenu3.IsChecked = false;
+				radioButtonMasuCntMenu4.IsChecked = false;
+				radioButtonMasuCntMenu5.IsChecked = false;
+				radioButtonMasuCntMenu6.IsChecked = false;
+				radioButtonMasuCntMenu7.IsChecked = false;
+				radioButtonMasuCntMenu8.IsChecked = false;
 			}
 			else if(mSetting.mMasuCntMenu == ReversiConst.DEF_MASU_CNT_8)
 			{
-				radioButtonMasuCntMenu1.Checked = false;
-				radioButtonMasuCntMenu2.Checked = true;
-				radioButtonMasuCntMenu3.Checked = false;
-				radioButtonMasuCntMenu4.Checked = false;
-				radioButtonMasuCntMenu5.Checked = false;
-				radioButtonMasuCntMenu6.Checked = false;
-				radioButtonMasuCntMenu7.Checked = false;
-				radioButtonMasuCntMenu8.Checked = false;
+				radioButtonMasuCntMenu1.IsChecked = false;
+				radioButtonMasuCntMenu2.IsChecked = true;
+				radioButtonMasuCntMenu3.IsChecked = false;
+				radioButtonMasuCntMenu4.IsChecked = false;
+				radioButtonMasuCntMenu5.IsChecked = false;
+				radioButtonMasuCntMenu6.IsChecked = false;
+				radioButtonMasuCntMenu7.IsChecked = false;
+				radioButtonMasuCntMenu8.IsChecked = false;
 			}
 			else if(mSetting.mMasuCntMenu == ReversiConst.DEF_MASU_CNT_10)
 			{
-				radioButtonMasuCntMenu1.Checked = false;
-				radioButtonMasuCntMenu2.Checked = false;
-				radioButtonMasuCntMenu3.Checked = true;
-				radioButtonMasuCntMenu4.Checked = false;
-				radioButtonMasuCntMenu5.Checked = false;
-				radioButtonMasuCntMenu6.Checked = false;
-				radioButtonMasuCntMenu7.Checked = false;
-				radioButtonMasuCntMenu8.Checked = false;
+				radioButtonMasuCntMenu1.IsChecked = false;
+				radioButtonMasuCntMenu2.IsChecked = false;
+				radioButtonMasuCntMenu3.IsChecked = true;
+				radioButtonMasuCntMenu4.IsChecked = false;
+				radioButtonMasuCntMenu5.IsChecked = false;
+				radioButtonMasuCntMenu6.IsChecked = false;
+				radioButtonMasuCntMenu7.IsChecked = false;
+				radioButtonMasuCntMenu8.IsChecked = false;
 			}
 			else if(mSetting.mMasuCntMenu == ReversiConst.DEF_MASU_CNT_12)
 			{
-				radioButtonMasuCntMenu1.Checked = false;
-				radioButtonMasuCntMenu2.Checked = false;
-				radioButtonMasuCntMenu3.Checked = false;
-				radioButtonMasuCntMenu4.Checked = true;
-				radioButtonMasuCntMenu5.Checked = false;
-				radioButtonMasuCntMenu6.Checked = false;
-				radioButtonMasuCntMenu7.Checked = false;
-				radioButtonMasuCntMenu8.Checked = false;
+				radioButtonMasuCntMenu1.IsChecked = false;
+				radioButtonMasuCntMenu2.IsChecked = false;
+				radioButtonMasuCntMenu3.IsChecked = false;
+				radioButtonMasuCntMenu4.IsChecked = true;
+				radioButtonMasuCntMenu5.IsChecked = false;
+				radioButtonMasuCntMenu6.IsChecked = false;
+				radioButtonMasuCntMenu7.IsChecked = false;
+				radioButtonMasuCntMenu8.IsChecked = false;
 			}
 			else if(mSetting.mMasuCntMenu == ReversiConst.DEF_MASU_CNT_14)
 			{
-				radioButtonMasuCntMenu1.Checked = false;
-				radioButtonMasuCntMenu2.Checked = false;
-				radioButtonMasuCntMenu3.Checked = false;
-				radioButtonMasuCntMenu4.Checked = false;
-				radioButtonMasuCntMenu5.Checked = true;
-				radioButtonMasuCntMenu6.Checked = false;
-				radioButtonMasuCntMenu7.Checked = false;
-				radioButtonMasuCntMenu8.Checked = false;
+				radioButtonMasuCntMenu1.IsChecked = false;
+				radioButtonMasuCntMenu2.IsChecked = false;
+				radioButtonMasuCntMenu3.IsChecked = false;
+				radioButtonMasuCntMenu4.IsChecked = false;
+				radioButtonMasuCntMenu5.IsChecked = true;
+				radioButtonMasuCntMenu6.IsChecked = false;
+				radioButtonMasuCntMenu7.IsChecked = false;
+				radioButtonMasuCntMenu8.IsChecked = false;
 			}
 			else if(mSetting.mMasuCntMenu == ReversiConst.DEF_MASU_CNT_16)
 			{
-				radioButtonMasuCntMenu1.Checked = false;
-				radioButtonMasuCntMenu2.Checked = false;
-				radioButtonMasuCntMenu3.Checked = false;
-				radioButtonMasuCntMenu4.Checked = false;
-				radioButtonMasuCntMenu5.Checked = false;
-				radioButtonMasuCntMenu6.Checked = true;
-				radioButtonMasuCntMenu7.Checked = false;
-				radioButtonMasuCntMenu8.Checked = false;
+				radioButtonMasuCntMenu1.IsChecked = false;
+				radioButtonMasuCntMenu2.IsChecked = false;
+				radioButtonMasuCntMenu3.IsChecked = false;
+				radioButtonMasuCntMenu4.IsChecked = false;
+				radioButtonMasuCntMenu5.IsChecked = false;
+				radioButtonMasuCntMenu6.IsChecked = true;
+				radioButtonMasuCntMenu7.IsChecked = false;
+				radioButtonMasuCntMenu8.IsChecked = false;
 			}
 			else if(mSetting.mMasuCntMenu == ReversiConst.DEF_MASU_CNT_18)
 			{
-				radioButtonMasuCntMenu1.Checked = false;
-				radioButtonMasuCntMenu2.Checked = false;
-				radioButtonMasuCntMenu3.Checked = false;
-				radioButtonMasuCntMenu4.Checked = false;
-				radioButtonMasuCntMenu5.Checked = false;
-				radioButtonMasuCntMenu6.Checked = false;
-				radioButtonMasuCntMenu7.Checked = true;
-				radioButtonMasuCntMenu8.Checked = false;
+				radioButtonMasuCntMenu1.IsChecked = false;
+				radioButtonMasuCntMenu2.IsChecked = false;
+				radioButtonMasuCntMenu3.IsChecked = false;
+				radioButtonMasuCntMenu4.IsChecked = false;
+				radioButtonMasuCntMenu5.IsChecked = false;
+				radioButtonMasuCntMenu6.IsChecked = false;
+				radioButtonMasuCntMenu7.IsChecked = true;
+				radioButtonMasuCntMenu8.IsChecked = false;
 			}
 			else
 			{
-				radioButtonMasuCntMenu1.Checked = false;
-				radioButtonMasuCntMenu2.Checked = false;
-				radioButtonMasuCntMenu3.Checked = false;
-				radioButtonMasuCntMenu4.Checked = false;
-				radioButtonMasuCntMenu5.Checked = false;
-				radioButtonMasuCntMenu6.Checked = false;
-				radioButtonMasuCntMenu7.Checked = false;
-				radioButtonMasuCntMenu8.Checked = true;
+				radioButtonMasuCntMenu1.IsChecked = false;
+				radioButtonMasuCntMenu2.IsChecked = false;
+				radioButtonMasuCntMenu3.IsChecked = false;
+				radioButtonMasuCntMenu4.IsChecked = false;
+				radioButtonMasuCntMenu5.IsChecked = false;
+				radioButtonMasuCntMenu6.IsChecked = false;
+				radioButtonMasuCntMenu7.IsChecked = false;
+				radioButtonMasuCntMenu8.IsChecked = true;
 			}
-			pictureBoxPlayerColor1.BackColor = mSetting.mPlayerColor1;
-			pictureBoxPlayerColor2.BackColor = mSetting.mPlayerColor2;
-			pictureBoxBackGroundColor.BackColor = mSetting.mBackGroundColor;
-			pictureBoxBorderColor.BackColor = mSetting.mBorderColor;
-*/
+			pictureBoxPlayerColor1.Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(mSetting.mPlayerColor1.A,mSetting.mPlayerColor1.R,mSetting.mPlayerColor1.G,mSetting.mPlayerColor1.B));
+			pictureBoxPlayerColor2.Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(mSetting.mPlayerColor2.A,mSetting.mPlayerColor2.R,mSetting.mPlayerColor2.G,mSetting.mPlayerColor2.B));
+			pictureBoxBackGroundColor.Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(mSetting.mBackGroundColor.A,mSetting.mBackGroundColor.R,mSetting.mBackGroundColor.G,mSetting.mBackGroundColor.B));
+			pictureBoxBorderColor.Background = new SolidColorBrush(System.Windows.Media.Color.FromArgb(mSetting.mBorderColor.A,mSetting.mBorderColor.R,mSetting.mBorderColor.G,mSetting.mBorderColor.B));
 		}
 
 		////////////////////////////////////////////////////////////////////////////////
@@ -264,59 +262,58 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		private void loadSettingForm()
 		{
-/*
 			// *** 現在のモード *** //
-			if(radioButtonMode1.Checked == true)			mSetting.mMode = ReversiConst.DEF_MODE_ONE;
+			if(radioButtonMode1.IsChecked == true)			mSetting.mMode = ReversiConst.DEF_MODE_ONE;
 			else											mSetting.mMode = ReversiConst.DEF_MODE_TWO;
 			// *** 現在のタイプ *** //
-			if(radioButtonType1.Checked == true)			mSetting.mType = ReversiConst.DEF_TYPE_EASY;
-			else if(radioButtonType2.Checked == true)		mSetting.mType = ReversiConst.DEF_TYPE_NOR;
+			if(radioButtonType1.IsChecked == true)			mSetting.mType = ReversiConst.DEF_TYPE_EASY;
+			else if(radioButtonType2.IsChecked == true)		mSetting.mType = ReversiConst.DEF_TYPE_NOR;
 			else											mSetting.mType = ReversiConst.DEF_TYPE_HARD;
 			// *** プレイヤーの色 *** //
-			if(radioButtonPlayer1.Checked == true)			mSetting.mPlayer = ReversiConst.REVERSI_STS_BLACK;
+			if(radioButtonPlayer1.IsChecked == true)			mSetting.mPlayer = ReversiConst.REVERSI_STS_BLACK;
 			else											mSetting.mPlayer = ReversiConst.REVERSI_STS_WHITE;
 			// *** アシスト *** //
-			if(radioButtonAssist1.Checked == true)			mSetting.mAssist = ReversiConst.DEF_ASSIST_OFF;
+			if(radioButtonAssist1.IsChecked == true)			mSetting.mAssist = ReversiConst.DEF_ASSIST_OFF;
 			else											mSetting.mAssist = ReversiConst.DEF_ASSIST_ON;
 			// *** ゲームスピード *** //
-			if(radioButtonGameSpd1.Checked == true)			mSetting.mGameSpd = ReversiConst.DEF_GAME_SPD_FAST;
-			else if(radioButtonGameSpd2.Checked == true)	mSetting.mGameSpd = ReversiConst.DEF_GAME_SPD_MID;
+			if(radioButtonGameSpd1.IsChecked == true)			mSetting.mGameSpd = ReversiConst.DEF_GAME_SPD_FAST;
+			else if(radioButtonGameSpd2.IsChecked == true)	mSetting.mGameSpd = ReversiConst.DEF_GAME_SPD_MID;
 			else											mSetting.mGameSpd = ReversiConst.DEF_GAME_SPD_SLOW;
 			// *** ゲーム終了アニメーション *** //
-			if(radioButtonEndAnim1.Checked == true)			mSetting.mEndAnim = ReversiConst.DEF_END_ANIM_OFF;
+			if(radioButtonEndAnim1.IsChecked == true)			mSetting.mEndAnim = ReversiConst.DEF_END_ANIM_OFF;
 			else											mSetting.mEndAnim = ReversiConst.DEF_END_ANIM_ON;
 			// *** マスの数 *** //
-			if(radioButtonMasuCntMenu1.Checked == true)
+			if(radioButtonMasuCntMenu1.IsChecked == true)
 			{
 				mSetting.mMasuCntMenu	= ReversiConst.DEF_MASU_CNT_6;
 				mSetting.mMasuCnt		= ReversiConst.DEF_MASU_CNT_6_VAL;
 			}
-			else if(radioButtonMasuCntMenu2.Checked == true)
+			else if(radioButtonMasuCntMenu2.IsChecked == true)
 			{
 				mSetting.mMasuCntMenu	= ReversiConst.DEF_MASU_CNT_8;
 				mSetting.mMasuCnt		= ReversiConst.DEF_MASU_CNT_8_VAL;
 			}
-			else if(radioButtonMasuCntMenu3.Checked == true)
+			else if(radioButtonMasuCntMenu3.IsChecked == true)
 			{
 				mSetting.mMasuCntMenu	= ReversiConst.DEF_MASU_CNT_10;
 				mSetting.mMasuCnt		= ReversiConst.DEF_MASU_CNT_10_VAL;
 			}
-			else if(radioButtonMasuCntMenu4.Checked == true)
+			else if(radioButtonMasuCntMenu4.IsChecked == true)
 			{
 				mSetting.mMasuCntMenu	= ReversiConst.DEF_MASU_CNT_12;
 				mSetting.mMasuCnt		= ReversiConst.DEF_MASU_CNT_12_VAL;
 			}
-			else if(radioButtonMasuCntMenu5.Checked == true)
+			else if(radioButtonMasuCntMenu5.IsChecked == true)
 			{
 				mSetting.mMasuCntMenu	= ReversiConst.DEF_MASU_CNT_14;
 				mSetting.mMasuCnt		= ReversiConst.DEF_MASU_CNT_14_VAL;
 			}
-			else if(radioButtonMasuCntMenu6.Checked == true)
+			else if(radioButtonMasuCntMenu6.IsChecked == true)
 			{
 				mSetting.mMasuCntMenu	= ReversiConst.DEF_MASU_CNT_16;
 				mSetting.mMasuCnt		= ReversiConst.DEF_MASU_CNT_16_VAL;
 			}
-			else if(radioButtonMasuCntMenu7.Checked == true)
+			else if(radioButtonMasuCntMenu7.IsChecked == true)
 			{
 				mSetting.mMasuCntMenu	= ReversiConst.DEF_MASU_CNT_18;
 				mSetting.mMasuCnt		= ReversiConst.DEF_MASU_CNT_18_VAL;
@@ -326,11 +323,14 @@ namespace ReversiWpf
 				mSetting.mMasuCntMenu	= ReversiConst.DEF_MASU_CNT_20;
 				mSetting.mMasuCnt		= ReversiConst.DEF_MASU_CNT_20_VAL;
 			}
-			mSetting.mPlayerColor1		= pictureBoxPlayerColor1.BackColor;
-			mSetting.mPlayerColor2		= pictureBoxPlayerColor2.BackColor;
-			mSetting.mBackGroundColor	= pictureBoxBackGroundColor.BackColor;
-			mSetting.mBorderColor		= pictureBoxBorderColor.BackColor;
-*/
+			SolidColorBrush work		= (SolidColorBrush)pictureBoxPlayerColor1.Background;
+			mSetting.mPlayerColor1		= System.Drawing.Color.FromArgb(work.Color.A,work.Color.R,work.Color.G,work.Color.B);
+			work						= (SolidColorBrush)pictureBoxPlayerColor2.Background;
+			mSetting.mPlayerColor2		= System.Drawing.Color.FromArgb(work.Color.A,work.Color.R,work.Color.G,work.Color.B);
+			work						= (SolidColorBrush)pictureBoxBackGroundColor.Background;
+			mSetting.mBackGroundColor	= System.Drawing.Color.FromArgb(work.Color.A,work.Color.R,work.Color.G,work.Color.B);
+			work						= (SolidColorBrush)pictureBoxBorderColor.Background;
+			mSetting.mBorderColor		= System.Drawing.Color.FromArgb(work.Color.A,work.Color.R,work.Color.G,work.Color.B);
 		}
 
 		////////////////////////////////////////////////////////////////////////////////
