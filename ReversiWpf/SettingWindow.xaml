@@ -37,10 +37,6 @@
             <RadioButton x:Name="radioButtonMasuCntMenu1" Content="6" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu"/>
         </GroupBox>
         <RadioButton x:Name="radioButtonMasuCntMenu2" Content="8" HorizontalAlignment="Left" Margin="61,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu"/>
-        <GroupBox Header="アシストモード" HorizontalAlignment="Left" Height="53" Margin="10,68,0,0" VerticalAlignment="Top" Width="129">
-            <RadioButton x:Name="radioButtonAssist4" Content="OFF" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" GroupName="radioButtonAssist"/>
-        </GroupBox>
-        <RadioButton x:Name="radioButtonAssist2_Copy1" Content="ON" HorizontalAlignment="Left" Margin="82,95,0,0" VerticalAlignment="Top" GroupName="radioButtonAssist"/>
         <RadioButton x:Name="radioButtonMasuCntMenu3" Content="10" HorizontalAlignment="Left" Margin="93,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu" RenderTransformOrigin="2.641,0.462"/>
         <RadioButton x:Name="radioButtonMasuCntMenu4" Content="12" HorizontalAlignment="Left" Margin="130,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu" RenderTransformOrigin="3.848,0.979"/>
         <RadioButton x:Name="radioButtonMasuCntMenu5" Content="14" HorizontalAlignment="Left" Margin="167,154,0,0" VerticalAlignment="Top" GroupName="radioButtonMasuCntMenu" RenderTransformOrigin="3.848,0.979"/>
