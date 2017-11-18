@@ -1,0 +1,6 @@
+<map id="ReversiWpf.MyReversi.setMasuCnt" name="ReversiWpf.MyReversi.setMasuCnt">
+<area shape="rect" id="node2" href="$class_reversi_wpf_1_1_my_reversi.html#adc98d24744c8e50f62f94b9441f582c5" title="パラメーター範囲チェック " alt="" coords="227,5,444,32"/>
+<area shape="rect" id="node3" href="$class_reversi_wpf_1_1_my_reversi.html#a61b1ee2e28cc4050ebbda2e54c7a60b6" title="リセット " alt="" coords="243,56,427,83"/>
+<area shape="rect" id="node4" href="$class_reversi_wpf_1_1_reversi_anz.html#a436fc0f66a511af5d589fe2ef493c8af" title="リセット " alt="" coords="492,27,681,53"/>
+<area shape="rect" id="node5" href="$class_reversi_wpf_1_1_my_reversi.html#a7e4d94600afb1b9d512341b1692769e7" title="各コマの置ける場所等のステータス作成 " alt="" coords="493,78,680,119"/>
+</map>

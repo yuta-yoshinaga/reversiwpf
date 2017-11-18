@@ -1,0 +1,5 @@
+<map id="ReversiWpf.MyReversi.getGameEndSts" name="ReversiWpf.MyReversi.getGameEndSts">
+<area shape="rect" id="node2" href="$class_reversi_wpf_1_1_my_reversi.html#a9a7c386e4b5007a937865ab301774c9e" title="指定色が現在置ける場所があるかチェック " alt="" coords="227,5,400,47"/>
+<area shape="rect" id="node3" href="$class_reversi_wpf_1_1_my_reversi.html#ac122d3db633616259d22d8bb885c074d" title="指定座標に指定色を置けるかチェック " alt="" coords="448,5,621,47"/>
+<area shape="rect" id="node4" href="$class_reversi_wpf_1_1_my_reversi.html#adc98d24744c8e50f62f94b9441f582c5" title="パラメーター範囲チェック " alt="" coords="669,13,887,39"/>
+</map>

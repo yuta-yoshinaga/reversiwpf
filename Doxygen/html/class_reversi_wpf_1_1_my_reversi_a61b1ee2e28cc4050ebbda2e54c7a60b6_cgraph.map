@@ -1,0 +1,4 @@
+<map id="ReversiWpf.MyReversi.reset" name="ReversiWpf.MyReversi.reset">
+<area shape="rect" id="node2" href="$class_reversi_wpf_1_1_reversi_anz.html#a436fc0f66a511af5d589fe2ef493c8af" title="リセット " alt="" coords="237,5,427,32"/>
+<area shape="rect" id="node3" href="$class_reversi_wpf_1_1_my_reversi.html#a7e4d94600afb1b9d512341b1692769e7" title="各コマの置ける場所等のステータス作成 " alt="" coords="239,57,425,98"/>
+</map>

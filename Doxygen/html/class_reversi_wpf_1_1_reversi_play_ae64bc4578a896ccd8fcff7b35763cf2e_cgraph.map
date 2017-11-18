@@ -1,0 +1,14 @@
+<map id="ReversiWpf.ReversiPlay.drawUpdate" name="ReversiWpf.ReversiPlay.drawUpdate">
+<area shape="rect" id="node2" href="$class_reversi_wpf_1_1_reversi_play.html#ad05442c4f60d564ea30e57e782efe985" title="情報描画メッセージ送信 " alt="" coords="244,143,435,184"/>
+<area shape="rect" id="node3" href="$class_reversi_wpf_1_1_reversi_play.html#aa9c1ae9fc1af06e7e73f9db980cf0cfa" title="メッセージ " alt="" coords="483,201,673,243"/>
+<area shape="rect" id="node4" href="$class_reversi_wpf_1_1_my_reversi.html#a34b0c0b96b147a8d2f1dc6863cac25d8" title="マスステータスを取得 " alt="" coords="731,5,904,47"/>
+<area shape="rect" id="node12" href="$class_reversi_wpf_1_1_my_reversi.html#acdf94f106c88ded99a4c5dcbbc19be16" title="以前のマスステータスを取得 " alt="" coords="491,421,665,463"/>
+<area shape="rect" id="node13" href="$class_reversi_wpf_1_1_reversi_play.html#acf2427a8a68d437b792975866fbf754d" title="描画メッセージ送信 " alt="" coords="244,260,435,301"/>
+<area shape="rect" id="node6" href="$class_reversi_wpf_1_1_my_reversi.html#ac122d3db633616259d22d8bb885c074d" title="指定座標に指定色を置けるかチェック " alt="" coords="731,71,904,112"/>
+<area shape="rect" id="node7" href="$class_reversi_wpf_1_1_my_reversi.html#ac2723c418d4b51ec0e4598cbd44634f0" title="指定座標の獲得コマ数取得 " alt="" coords="731,136,904,177"/>
+<area shape="rect" id="node8" href="$class_reversi_wpf_1_1_reversi_play.html#adf9df9b9ae755f35bdc7d998cb1c43c4" title="1マス描画 " alt="" coords="721,201,913,243"/>
+<area shape="rect" id="node9" href="$class_reversi_wpf_1_1_reversi_play.html#a009e9476a5ca008b66093f78132bb096" title="現在の色メッセージ " alt="" coords="726,267,909,308"/>
+<area shape="rect" id="node10" href="$class_reversi_wpf_1_1_my_reversi.html#a57482d7118dad2c5d104e186acd5212b" title="コマ数取得 " alt="" coords="731,332,904,373"/>
+<area shape="rect" id="node11" href="$class_reversi_wpf_1_1_reversi_play.html#a3bf270db60f09d060120c0d85966e754" title="現在のステータスメッセージ " alt="" coords="726,397,909,439"/>
+<area shape="rect" id="node5" href="$class_reversi_wpf_1_1_my_reversi.html#adc98d24744c8e50f62f94b9441f582c5" title="パラメーター範囲チェック " alt="" coords="961,111,1179,138"/>
+</map>

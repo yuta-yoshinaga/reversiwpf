@@ -1,0 +1,965 @@
+\hypertarget{class_reversi_wpf_1_1_reversi_play}{}\section{Reversi\+Wpf.\+Reversi\+Play Class Reference}
+\label{class_reversi_wpf_1_1_reversi_play}\index{Reversi\+Wpf.\+Reversi\+Play@{Reversi\+Wpf.\+Reversi\+Play}}
+
+
+リバーシプレイクラス  
+
+
+
+
+Collaboration diagram for Reversi\+Wpf.\+Reversi\+Play\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_reversi_wpf_1_1_reversi_play__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a22d2284ca208a60f97ee6b0c11f1f18a}\label{class_reversi_wpf_1_1_reversi_play_a22d2284ca208a60f97ee6b0c11f1f18a}} 
+delegate void {\bfseries View\+Msg\+Dlg} (string title, string msg)
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a60621264b6be6eb7901d5d3dd5ae74da}\label{class_reversi_wpf_1_1_reversi_play_a60621264b6be6eb7901d5d3dd5ae74da}} 
+delegate void {\bfseries Draw\+Single} (int y, int x, int sts, int bk, string text)
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_afdebf739eaa56aa355c9f7fd230f311a}\label{class_reversi_wpf_1_1_reversi_play_afdebf739eaa56aa355c9f7fd230f311a}} 
+delegate void {\bfseries Cur\+Col\+Msg} (string text)
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_ae97e5fa31d6224dfeca2046edfbd56f4}\label{class_reversi_wpf_1_1_reversi_play_ae97e5fa31d6224dfeca2046edfbd56f4}} 
+delegate void {\bfseries Cur\+Sts\+Msg} (string text)
+\item 
+\hyperlink{class_reversi_wpf_1_1_reversi_play_abcc100fea7e30e8f1e1b1ef4c574029b}{Reversi\+Play} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\hyperlink{class_reversi_wpf_1_1_reversi_play}{Reversi\+Play} \hyperlink{class_reversi_wpf_1_1_reversi_play_a0b650938608eb497b7aceaef6a648980}{Clone} ()
+\begin{DoxyCompactList}\small\item\em コピー \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_a735fd2b6a5f7be5089f702f5265cd183}{reversi\+Play} (int y, int x)
+\begin{DoxyCompactList}\small\item\em リバーシプレイ \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_ae7e23ef808336291a39f0ac37687d1dc}{reversi\+Play\+Sub} (int cpu\+Ena, int tmp\+Col)
+\begin{DoxyCompactList}\small\item\em リバーシプレイサブ \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_a091d27bec4b3570ab595a49170342105}{reversi\+Play\+End} ()
+\begin{DoxyCompactList}\small\item\em リバーシプレイ終了 \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_a3aca2f66c873be50dca194a396d34bd7}{reversi\+Play\+Pass} (int color)
+\begin{DoxyCompactList}\small\item\em リバーシプレイパス \end{DoxyCompactList}\item 
+int \hyperlink{class_reversi_wpf_1_1_reversi_play_ab9824cdb1bc61ac894ea237b732bd166}{reversi\+Play\+Cpu} (int color, int cpu\+Ena)
+\begin{DoxyCompactList}\small\item\em リバーシプレイコンピューター \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_ae64bc4578a896ccd8fcff7b35763cf2e}{draw\+Update} (int assist)
+\begin{DoxyCompactList}\small\item\em マス描画更新 \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_a0324e804add5c651915266f0254eb26f}{draw\+Update\+Forcibly} (int assist)
+\begin{DoxyCompactList}\small\item\em マス描画強制更新 \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_aee0447f5d955d0b2b66d14b491d90e81}{reset} ()
+\begin{DoxyCompactList}\small\item\em リセット処理 \end{DoxyCompactList}\item 
+int \hyperlink{class_reversi_wpf_1_1_reversi_play_a222edc5a1161d4859635ef87d46da59c}{game\+End\+Anim\+Exec} ()
+\begin{DoxyCompactList}\small\item\em ゲーム終了アニメーション \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_acf2427a8a68d437b792975866fbf754d}{send\+Draw\+Msg} (int y, int x)
+\begin{DoxyCompactList}\small\item\em 描画メッセージ送信 \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_ad05442c4f60d564ea30e57e782efe985}{send\+Draw\+Info\+Msg} (int y, int x)
+\begin{DoxyCompactList}\small\item\em 情報描画メッセージ送信 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a727f0f3e3958d3c94263c8a969716ad4}\label{class_reversi_wpf_1_1_reversi_play_a727f0f3e3958d3c94263c8a969716ad4}} 
+\hyperlink{class_reversi_wpf_1_1_my_reversi}{My\+Reversi} {\bfseries m\+Reversi}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a4ad5dd2a18babb698785798c2ec830a3}\label{class_reversi_wpf_1_1_reversi_play_a4ad5dd2a18babb698785798c2ec830a3}} 
+\hyperlink{class_reversi_wpf_1_1_reversi_setting}{Reversi\+Setting} {\bfseries m\+Setting}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_ac28adee0a15470fd3d3e2c32b9098af7}\label{class_reversi_wpf_1_1_reversi_play_ac28adee0a15470fd3d3e2c32b9098af7}} 
+int {\bfseries m\+Cur\+Color}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_ab1e3a3f18c2e455e97db37d0b2973467}\label{class_reversi_wpf_1_1_reversi_play_ab1e3a3f18c2e455e97db37d0b2973467}} 
+\hyperlink{class_reversi_wpf_1_1_reversi_point}{Reversi\+Point} \mbox{[}$\,$\mbox{]} {\bfseries m\+Cpu}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a729c50a84b9513d7d3b30e9f1e87ca1b}\label{class_reversi_wpf_1_1_reversi_play_a729c50a84b9513d7d3b30e9f1e87ca1b}} 
+\hyperlink{class_reversi_wpf_1_1_reversi_point}{Reversi\+Point} \mbox{[}$\,$\mbox{]} {\bfseries m\+Edge}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a1211a4ae12cf9c3b504959611b857add}\label{class_reversi_wpf_1_1_reversi_play_a1211a4ae12cf9c3b504959611b857add}} 
+int {\bfseries m\+Pass\+EnaB}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_abeed5921e503d80d874097376774e68a}\label{class_reversi_wpf_1_1_reversi_play_abeed5921e503d80d874097376774e68a}} 
+int {\bfseries m\+Pass\+EnaW}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a0fdafec6e587b7f12891425c70ada0ef}\label{class_reversi_wpf_1_1_reversi_play_a0fdafec6e587b7f12891425c70ada0ef}} 
+int {\bfseries m\+Game\+End\+Sts}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a716ef3609e857e74bd9a279d7d560abc}\label{class_reversi_wpf_1_1_reversi_play_a716ef3609e857e74bd9a279d7d560abc}} 
+int {\bfseries m\+Play\+Lock}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_aa3817b1eb2a8e85e651146e55928c504}\label{class_reversi_wpf_1_1_reversi_play_aa3817b1eb2a8e85e651146e55928c504}} 
+View\+Msg\+Dlg {\bfseries view\+Msg\+Dlg}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a7544d17f79e43eb3c8e74e4fddcc9f0b}\label{class_reversi_wpf_1_1_reversi_play_a7544d17f79e43eb3c8e74e4fddcc9f0b}} 
+Draw\+Single {\bfseries draw\+Single}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a2be875a95928a99ec1b18c9e9e7b6f31}\label{class_reversi_wpf_1_1_reversi_play_a2be875a95928a99ec1b18c9e9e7b6f31}} 
+Cur\+Col\+Msg {\bfseries cur\+Col\+Msg}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a9b42db17094d9043117b1f62d1f13ddb}\label{class_reversi_wpf_1_1_reversi_play_a9b42db17094d9043117b1f62d1f13ddb}} 
+Cur\+Sts\+Msg {\bfseries cur\+Sts\+Msg}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_aa9c1ae9fc1af06e7e73f9db980cf0cfa}{exec\+Message} (int what, Object obj)
+\begin{DoxyCompactList}\small\item\em メッセージ \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_a3c3009d24aebf02f92d62b79ea01934c}{View\+Msg\+Dlg\+Local} (string title, string msg)
+\begin{DoxyCompactList}\small\item\em メッセージダイアログ \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_adf9df9b9ae755f35bdc7d998cb1c43c4}{Draw\+Single\+Local} (int y, int x, int sts, int bk, string text)
+\begin{DoxyCompactList}\small\item\em 1マス描画 \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_a009e9476a5ca008b66093f78132bb096}{Cur\+Col\+Msg\+Local} (string text)
+\begin{DoxyCompactList}\small\item\em 現在の色メッセージ \end{DoxyCompactList}\item 
+void \hyperlink{class_reversi_wpf_1_1_reversi_play_a3bf270db60f09d060120c0d85966e754}{Cur\+Sts\+Msg\+Local} (string text)
+\begin{DoxyCompactList}\small\item\em 現在のステータスメッセージ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a720255eb1c2bada5da163eda683872d7}\label{class_reversi_wpf_1_1_reversi_play_a720255eb1c2bada5da163eda683872d7}} 
+\hyperlink{class_reversi_wpf_1_1_my_reversi}{My\+Reversi} \hyperlink{class_reversi_wpf_1_1_reversi_play_a720255eb1c2bada5da163eda683872d7}{\+\_\+m\+Reversi}
+\begin{DoxyCompactList}\small\item\em リバーシクラス \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_acece20b93be27ff60a507bd8fa6ab528}\label{class_reversi_wpf_1_1_reversi_play_acece20b93be27ff60a507bd8fa6ab528}} 
+\hyperlink{class_reversi_wpf_1_1_reversi_setting}{Reversi\+Setting} \hyperlink{class_reversi_wpf_1_1_reversi_play_acece20b93be27ff60a507bd8fa6ab528}{\+\_\+m\+Setting}
+\begin{DoxyCompactList}\small\item\em リバーシ設定クラス \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a1cce3d7a105abf07aa1f1fc7a8efc757}\label{class_reversi_wpf_1_1_reversi_play_a1cce3d7a105abf07aa1f1fc7a8efc757}} 
+int \hyperlink{class_reversi_wpf_1_1_reversi_play_a1cce3d7a105abf07aa1f1fc7a8efc757}{\+\_\+m\+Cur\+Color} = 0
+\begin{DoxyCompactList}\small\item\em 現在の色 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a3ee598763d09b9be12947e42ac2febc8}\label{class_reversi_wpf_1_1_reversi_play_a3ee598763d09b9be12947e42ac2febc8}} 
+\hyperlink{class_reversi_wpf_1_1_reversi_point}{Reversi\+Point} \mbox{[}$\,$\mbox{]} \hyperlink{class_reversi_wpf_1_1_reversi_play_a3ee598763d09b9be12947e42ac2febc8}{\+\_\+m\+Cpu}
+\begin{DoxyCompactList}\small\item\em C\+P\+U用ワーク \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a8f91804ec4a2179a5db0340d4ff1316a}\label{class_reversi_wpf_1_1_reversi_play_a8f91804ec4a2179a5db0340d4ff1316a}} 
+\hyperlink{class_reversi_wpf_1_1_reversi_point}{Reversi\+Point} \mbox{[}$\,$\mbox{]} \hyperlink{class_reversi_wpf_1_1_reversi_play_a8f91804ec4a2179a5db0340d4ff1316a}{\+\_\+m\+Edge}
+\begin{DoxyCompactList}\small\item\em C\+P\+U用角マスワーク \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a2cfdbcc3b8c112090101da79d1e4560f}\label{class_reversi_wpf_1_1_reversi_play_a2cfdbcc3b8c112090101da79d1e4560f}} 
+int \hyperlink{class_reversi_wpf_1_1_reversi_play_a2cfdbcc3b8c112090101da79d1e4560f}{\+\_\+m\+Pass\+EnaB} = 0
+\begin{DoxyCompactList}\small\item\em 黒のパス有効フラグ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_ae7d24694cc6b43a2b33d5f0d9345c99f}\label{class_reversi_wpf_1_1_reversi_play_ae7d24694cc6b43a2b33d5f0d9345c99f}} 
+int \hyperlink{class_reversi_wpf_1_1_reversi_play_ae7d24694cc6b43a2b33d5f0d9345c99f}{\+\_\+m\+Pass\+EnaW} = 0
+\begin{DoxyCompactList}\small\item\em 白のパス有効フラグ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a10d7f20f191b2bd6cd902e4d04c08a44}\label{class_reversi_wpf_1_1_reversi_play_a10d7f20f191b2bd6cd902e4d04c08a44}} 
+int \hyperlink{class_reversi_wpf_1_1_reversi_play_a10d7f20f191b2bd6cd902e4d04c08a44}{\+\_\+m\+Game\+End\+Sts} = 0
+\begin{DoxyCompactList}\small\item\em ゲーム終了ステータス \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a211b30d74c6ad15de0bfda07e1439a31}\label{class_reversi_wpf_1_1_reversi_play_a211b30d74c6ad15de0bfda07e1439a31}} 
+int \hyperlink{class_reversi_wpf_1_1_reversi_play_a211b30d74c6ad15de0bfda07e1439a31}{\+\_\+m\+Play\+Lock} = 0
+\begin{DoxyCompactList}\small\item\em プレイロック \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_ab70140e09106b7e82b8959af3360de39}\label{class_reversi_wpf_1_1_reversi_play_ab70140e09106b7e82b8959af3360de39}} 
+View\+Msg\+Dlg \hyperlink{class_reversi_wpf_1_1_reversi_play_ab70140e09106b7e82b8959af3360de39}{\+\_\+view\+Msg\+Dlg} = null
+\begin{DoxyCompactList}\small\item\em メッセージコールバック \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a915635a7da079933b0c3f4a7799421ae}\label{class_reversi_wpf_1_1_reversi_play_a915635a7da079933b0c3f4a7799421ae}} 
+Draw\+Single \hyperlink{class_reversi_wpf_1_1_reversi_play_a915635a7da079933b0c3f4a7799421ae}{\+\_\+draw\+Single} = null
+\begin{DoxyCompactList}\small\item\em 描画コールバック \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a69f1071d4e5e1a619b1d7dc4b5e4120f}\label{class_reversi_wpf_1_1_reversi_play_a69f1071d4e5e1a619b1d7dc4b5e4120f}} 
+Cur\+Col\+Msg \hyperlink{class_reversi_wpf_1_1_reversi_play_a69f1071d4e5e1a619b1d7dc4b5e4120f}{\+\_\+cur\+Col\+Msg} = null
+\begin{DoxyCompactList}\small\item\em 現在の色メッセージコールバック \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a7e31369a7d8d93b09a7a86d58b3c0502}\label{class_reversi_wpf_1_1_reversi_play_a7e31369a7d8d93b09a7a86d58b3c0502}} 
+Cur\+Sts\+Msg \hyperlink{class_reversi_wpf_1_1_reversi_play_a7e31369a7d8d93b09a7a86d58b3c0502}{\+\_\+cur\+Sts\+Msg} = null
+\begin{DoxyCompactList}\small\item\em 現在のステータスメッセージコールバック \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a3ee3805939fa7cbdedc950ed54891216}\label{class_reversi_wpf_1_1_reversi_play_a3ee3805939fa7cbdedc950ed54891216}} 
+System.\+Random \hyperlink{class_reversi_wpf_1_1_reversi_play_a3ee3805939fa7cbdedc950ed54891216}{r} = new System.\+Random()
+\begin{DoxyCompactList}\small\item\em 乱数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+リバーシプレイクラス 
+
+Definition at line 30 of file Reversi\+Play.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_abcc100fea7e30e8f1e1b1ef4c574029b}\label{class_reversi_wpf_1_1_reversi_play_abcc100fea7e30e8f1e1b1ef4c574029b}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!Reversi\+Play@{Reversi\+Play}}
+\index{Reversi\+Play@{Reversi\+Play}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{Reversi\+Play()}{ReversiPlay()}}
+{\footnotesize\ttfamily Reversi\+Wpf.\+Reversi\+Play.\+Reversi\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 132 of file Reversi\+Play.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a0b650938608eb497b7aceaef6a648980}\label{class_reversi_wpf_1_1_reversi_play_a0b650938608eb497b7aceaef6a648980}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!Clone@{Clone}}
+\index{Clone@{Clone}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{class_reversi_wpf_1_1_reversi_play}{Reversi\+Play} Reversi\+Wpf.\+Reversi\+Play.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コピー 
+
+\begin{DoxyReturn}{Returns}
+オブジェクトコピー 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 152 of file Reversi\+Play.\+cs.
+
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a009e9476a5ca008b66093f78132bb096}\label{class_reversi_wpf_1_1_reversi_play_a009e9476a5ca008b66093f78132bb096}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!Cur\+Col\+Msg\+Local@{Cur\+Col\+Msg\+Local}}
+\index{Cur\+Col\+Msg\+Local@{Cur\+Col\+Msg\+Local}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{Cur\+Col\+Msg\+Local()}{CurColMsgLocal()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+Cur\+Col\+Msg\+Local (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+現在の色メッセージ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em string} & text テキスト \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 962 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+exec\+Message().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a009e9476a5ca008b66093f78132bb096_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a3bf270db60f09d060120c0d85966e754}\label{class_reversi_wpf_1_1_reversi_play_a3bf270db60f09d060120c0d85966e754}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!Cur\+Sts\+Msg\+Local@{Cur\+Sts\+Msg\+Local}}
+\index{Cur\+Sts\+Msg\+Local@{Cur\+Sts\+Msg\+Local}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{Cur\+Sts\+Msg\+Local()}{CurStsMsgLocal()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+Cur\+Sts\+Msg\+Local (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+現在のステータスメッセージ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em string} & text テキスト \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 976 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+exec\+Message().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a3bf270db60f09d060120c0d85966e754_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_adf9df9b9ae755f35bdc7d998cb1c43c4}\label{class_reversi_wpf_1_1_reversi_play_adf9df9b9ae755f35bdc7d998cb1c43c4}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!Draw\+Single\+Local@{Draw\+Single\+Local}}
+\index{Draw\+Single\+Local@{Draw\+Single\+Local}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{Draw\+Single\+Local()}{DrawSingleLocal()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+Draw\+Single\+Local (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x,  }\item[{int}]{sts,  }\item[{int}]{bk,  }\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+1マス描画 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & y Y座標 \\
+\hline
+\mbox{\tt in}  & {\em int} & x X座標 \\
+\hline
+\mbox{\tt in}  & {\em int} & sts ステータス \\
+\hline
+\mbox{\tt in}  & {\em int} & bk 背景 \\
+\hline
+\mbox{\tt in}  & {\em string} & text テキスト \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 948 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+exec\+Message().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_adf9df9b9ae755f35bdc7d998cb1c43c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_ae64bc4578a896ccd8fcff7b35763cf2e}\label{class_reversi_wpf_1_1_reversi_play_ae64bc4578a896ccd8fcff7b35763cf2e}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!draw\+Update@{draw\+Update}}
+\index{draw\+Update@{draw\+Update}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{draw\+Update()}{drawUpdate()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+draw\+Update (\begin{DoxyParamCaption}\item[{int}]{assist }\end{DoxyParamCaption})}
+
+
+
+マス描画更新 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & assist アシスト設定 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 620 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play(), and Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Cpu().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_ae64bc4578a896ccd8fcff7b35763cf2e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_ae64bc4578a896ccd8fcff7b35763cf2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a0324e804add5c651915266f0254eb26f}\label{class_reversi_wpf_1_1_reversi_play_a0324e804add5c651915266f0254eb26f}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!draw\+Update\+Forcibly@{draw\+Update\+Forcibly}}
+\index{draw\+Update\+Forcibly@{draw\+Update\+Forcibly}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{draw\+Update\+Forcibly()}{drawUpdateForcibly()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+draw\+Update\+Forcibly (\begin{DoxyParamCaption}\item[{int}]{assist }\end{DoxyParamCaption})}
+
+
+
+マス描画強制更新 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & assist アシスト設定 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 653 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+reset().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a0324e804add5c651915266f0254eb26f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a0324e804add5c651915266f0254eb26f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_aa9c1ae9fc1af06e7e73f9db980cf0cfa}\label{class_reversi_wpf_1_1_reversi_play_aa9c1ae9fc1af06e7e73f9db980cf0cfa}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!exec\+Message@{exec\+Message}}
+\index{exec\+Message@{exec\+Message}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{exec\+Message()}{execMessage()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+exec\+Message (\begin{DoxyParamCaption}\item[{int}]{what,  }\item[{Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+メッセージ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & what \\
+\hline
+\mbox{\tt in}  & {\em var} & obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 835 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+draw\+Update(), Reversi\+Wpf.\+Reversi\+Play.\+draw\+Update\+Forcibly(), Reversi\+Wpf.\+Reversi\+Play.\+game\+End\+Anim\+Exec(), Reversi\+Wpf.\+Reversi\+Play.\+reset(), Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play(), Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Cpu(), Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+End(), Reversi\+Wpf.\+Reversi\+Play.\+send\+Draw\+Info\+Msg(), and Reversi\+Wpf.\+Reversi\+Play.\+send\+Draw\+Msg().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_aa9c1ae9fc1af06e7e73f9db980cf0cfa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_aa9c1ae9fc1af06e7e73f9db980cf0cfa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a222edc5a1161d4859635ef87d46da59c}\label{class_reversi_wpf_1_1_reversi_play_a222edc5a1161d4859635ef87d46da59c}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!game\+End\+Anim\+Exec@{game\+End\+Anim\+Exec}}
+\index{game\+End\+Anim\+Exec@{game\+End\+Anim\+Exec}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{game\+End\+Anim\+Exec()}{gameEndAnimExec()}}
+{\footnotesize\ttfamily int Reversi\+Wpf.\+Reversi\+Play.\+game\+End\+Anim\+Exec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ゲーム終了アニメーション 
+
+\begin{DoxyReturn}{Returns}
+ウェイト時間 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 728 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+End().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a222edc5a1161d4859635ef87d46da59c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a222edc5a1161d4859635ef87d46da59c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_aee0447f5d955d0b2b66d14b491d90e81}\label{class_reversi_wpf_1_1_reversi_play_aee0447f5d955d0b2b66d14b491d90e81}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!reset@{reset}}
+\index{reset@{reset}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+リセット処理 
+
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 678 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Main\+Window.\+btn\+\_\+reset\+\_\+\+Click(), and Reversi\+Wpf.\+Main\+Window.\+Main\+Window().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_aee0447f5d955d0b2b66d14b491d90e81_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_aee0447f5d955d0b2b66d14b491d90e81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a735fd2b6a5f7be5089f702f5265cd183}\label{class_reversi_wpf_1_1_reversi_play_a735fd2b6a5f7be5089f702f5265cd183}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!reversi\+Play@{reversi\+Play}}
+\index{reversi\+Play@{reversi\+Play}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{reversi\+Play()}{reversiPlay()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+リバーシプレイ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & y Y座標 \\
+\hline
+\mbox{\tt in}  & {\em int} & x X座標 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 167 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Main\+Window.\+picture\+Box\+\_\+\+Click().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a735fd2b6a5f7be5089f702f5265cd183_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a735fd2b6a5f7be5089f702f5265cd183_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_ab9824cdb1bc61ac894ea237b732bd166}\label{class_reversi_wpf_1_1_reversi_play_ab9824cdb1bc61ac894ea237b732bd166}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!reversi\+Play\+Cpu@{reversi\+Play\+Cpu}}
+\index{reversi\+Play\+Cpu@{reversi\+Play\+Cpu}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{reversi\+Play\+Cpu()}{reversiPlayCpu()}}
+{\footnotesize\ttfamily int Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Cpu (\begin{DoxyParamCaption}\item[{int}]{color,  }\item[{int}]{cpu\+Ena }\end{DoxyParamCaption})}
+
+
+
+リバーシプレイコンピューター 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & color C\+P\+U色 \\
+\hline
+\mbox{\tt in}  & {\em int} & cpu\+Ena C\+P\+U有効フラグ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 361 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Sub().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_ab9824cdb1bc61ac894ea237b732bd166_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_ab9824cdb1bc61ac894ea237b732bd166_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a091d27bec4b3570ab595a49170342105}\label{class_reversi_wpf_1_1_reversi_play_a091d27bec4b3570ab595a49170342105}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!reversi\+Play\+End@{reversi\+Play\+End}}
+\index{reversi\+Play\+End@{reversi\+Play\+End}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{reversi\+Play\+End()}{reversiPlayEnd()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+リバーシプレイ終了 
+
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 291 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play(), and Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Sub().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a091d27bec4b3570ab595a49170342105_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a091d27bec4b3570ab595a49170342105_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a3aca2f66c873be50dca194a396d34bd7}\label{class_reversi_wpf_1_1_reversi_play_a3aca2f66c873be50dca194a396d34bd7}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!reversi\+Play\+Pass@{reversi\+Play\+Pass}}
+\index{reversi\+Play\+Pass@{reversi\+Play\+Pass}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{reversi\+Play\+Pass()}{reversiPlayPass()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Pass (\begin{DoxyParamCaption}\item[{int}]{color }\end{DoxyParamCaption})}
+
+
+
+リバーシプレイパス 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & color パス色 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 339 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play(), and Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Sub().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a3aca2f66c873be50dca194a396d34bd7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a3aca2f66c873be50dca194a396d34bd7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_ae7e23ef808336291a39f0ac37687d1dc}\label{class_reversi_wpf_1_1_reversi_play_ae7e23ef808336291a39f0ac37687d1dc}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!reversi\+Play\+Sub@{reversi\+Play\+Sub}}
+\index{reversi\+Play\+Sub@{reversi\+Play\+Sub}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{reversi\+Play\+Sub()}{reversiPlaySub()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Sub (\begin{DoxyParamCaption}\item[{int}]{cpu\+Ena,  }\item[{int}]{tmp\+Col }\end{DoxyParamCaption})}
+
+
+
+リバーシプレイサブ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & cpu\+Ena \\
+\hline
+\mbox{\tt in}  & {\em int} & tmp\+Col \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 261 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_ae7e23ef808336291a39f0ac37687d1dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_ae7e23ef808336291a39f0ac37687d1dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_ad05442c4f60d564ea30e57e782efe985}\label{class_reversi_wpf_1_1_reversi_play_ad05442c4f60d564ea30e57e782efe985}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!send\+Draw\+Info\+Msg@{send\+Draw\+Info\+Msg}}
+\index{send\+Draw\+Info\+Msg@{send\+Draw\+Info\+Msg}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{send\+Draw\+Info\+Msg()}{sendDrawInfoMsg()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+send\+Draw\+Info\+Msg (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+情報描画メッセージ送信 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & y Y座標 \\
+\hline
+\mbox{\tt in}  & {\em int} & x X座標 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 816 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+draw\+Update().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_ad05442c4f60d564ea30e57e782efe985_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_ad05442c4f60d564ea30e57e782efe985_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_acf2427a8a68d437b792975866fbf754d}\label{class_reversi_wpf_1_1_reversi_play_acf2427a8a68d437b792975866fbf754d}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!send\+Draw\+Msg@{send\+Draw\+Msg}}
+\index{send\+Draw\+Msg@{send\+Draw\+Msg}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{send\+Draw\+Msg()}{sendDrawMsg()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+send\+Draw\+Msg (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+描画メッセージ送信 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em int} & y Y座標 \\
+\hline
+\mbox{\tt in}  & {\em int} & x X座標 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 797 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+draw\+Update(), Reversi\+Wpf.\+Reversi\+Play.\+game\+End\+Anim\+Exec(), Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play(), and Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Cpu().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_acf2427a8a68d437b792975866fbf754d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_acf2427a8a68d437b792975866fbf754d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_reversi_wpf_1_1_reversi_play_a3c3009d24aebf02f92d62b79ea01934c}\label{class_reversi_wpf_1_1_reversi_play_a3c3009d24aebf02f92d62b79ea01934c}} 
+\index{Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}!View\+Msg\+Dlg\+Local@{View\+Msg\+Dlg\+Local}}
+\index{View\+Msg\+Dlg\+Local@{View\+Msg\+Dlg\+Local}!Reversi\+Wpf\+::\+Reversi\+Play@{Reversi\+Wpf\+::\+Reversi\+Play}}
+\subsubsection{\texorpdfstring{View\+Msg\+Dlg\+Local()}{ViewMsgDlgLocal()}}
+{\footnotesize\ttfamily void Reversi\+Wpf.\+Reversi\+Play.\+View\+Msg\+Dlg\+Local (\begin{DoxyParamCaption}\item[{string}]{title,  }\item[{string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+メッセージダイアログ 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em string} & title タイトル \\
+\hline
+\mbox{\tt in}  & {\em string} & msg メッセージ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ありません 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Yuta Yoshinaga 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2017.\+10.\+20 
+\end{DoxyDate}
+
+
+Definition at line 930 of file Reversi\+Play.\+cs.
+
+
+
+Referenced by Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play(), Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+End(), and Reversi\+Wpf.\+Reversi\+Play.\+reversi\+Play\+Pass().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reversi_wpf_1_1_reversi_play_a3c3009d24aebf02f92d62b79ea01934c_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Model/\hyperlink{_reversi_play_8cs}{Reversi\+Play.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,17 @@
+<map id="ReversiWpf.MyReversi.AnalysisReversi" name="ReversiWpf.MyReversi.AnalysisReversi">
+<area shape="rect" id="node2" href="$class_reversi_wpf_1_1_reversi_anz.html#a436fc0f66a511af5d589fe2ef493c8af" title="リセット " alt="" coords="267,145,456,171"/>
+<area shape="rect" id="node3" href="$class_reversi_wpf_1_1_my_reversi.html#af7ca68ea9f05d79c1debbdc320555098" title="解析を行う(黒) " alt="" coords="259,312,464,353"/>
+<area shape="rect" id="node5" href="$class_reversi_wpf_1_1_my_reversi.html#a7e4d94600afb1b9d512341b1692769e7" title="各コマの置ける場所等のステータス作成 " alt="" coords="529,5,715,47"/>
+<area shape="rect" id="node16" href="$class_reversi_wpf_1_1_my_reversi.html#a7be281b0dbae11afb652260b4d30f128" title="解析を行う(白) " alt="" coords="259,247,464,288"/>
+<area shape="rect" id="node4" href="$class_reversi_wpf_1_1_my_reversi.html#a0c99040662eebcca741bdda303f07eb6" title="コマをひっくり返す " alt="" coords="537,188,707,229"/>
+<area shape="rect" id="node6" href="$class_reversi_wpf_1_1_my_reversi.html#a9a7c386e4b5007a937865ab301774c9e" title="指定色が現在置ける場所があるかチェック " alt="" coords="535,123,709,164"/>
+<area shape="rect" id="node7" href="$class_reversi_wpf_1_1_my_reversi.html#ac122d3db633616259d22d8bb885c074d" title="指定座標に指定色を置けるかチェック " alt="" coords="780,137,953,179"/>
+<area shape="rect" id="node9" href="$class_reversi_wpf_1_1_my_reversi.html#a3418fce34fd194987dc0efcd7aa654a4" title="指定座標が角か取得 " alt="" coords="535,305,709,347"/>
+<area shape="rect" id="node10" href="$class_reversi_wpf_1_1_my_reversi.html#a6e9641216f52b0c384f43a26cfea981f" title="指定座標が角の一つ手前か取得 " alt="" coords="535,371,709,412"/>
+<area shape="rect" id="node11" href="$class_reversi_wpf_1_1_my_reversi.html#acad9426b5389a91f1f42c733b2f2097e" title="角の隣に置いても角を取られないマス検索 " alt="" coords="512,254,732,281"/>
+<area shape="rect" id="node13" href="$class_reversi_wpf_1_1_my_reversi.html#ae59ceaeded22519213df314ab31b45d1" title="指定座標が角の二つ手前か取得 " alt="" coords="535,436,709,477"/>
+<area shape="rect" id="node14" href="$class_reversi_wpf_1_1_my_reversi.html#a278da279bc20775b0849a1316729d6a3" title="指定座標が角の三つ以上手前か取得 " alt="" coords="535,501,709,543"/>
+<area shape="rect" id="node15" href="$class_reversi_wpf_1_1_my_reversi.html#a86f08f7b19fe00b88ef7236bd784a451" title="ポイント座標数取得 " alt="" coords="535,567,709,608"/>
+<area shape="rect" id="node8" href="$class_reversi_wpf_1_1_my_reversi.html#adc98d24744c8e50f62f94b9441f582c5" title="パラメーター範囲チェック " alt="" coords="1001,193,1219,219"/>
+<area shape="rect" id="node12" href="$class_reversi_wpf_1_1_my_reversi.html#a34b0c0b96b147a8d2f1dc6863cac25d8" title="マスステータスを取得 " alt="" coords="780,232,953,273"/>
+</map>

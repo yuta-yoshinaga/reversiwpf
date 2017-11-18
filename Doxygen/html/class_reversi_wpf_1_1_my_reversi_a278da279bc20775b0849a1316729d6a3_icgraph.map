@@ -1,0 +1,13 @@
+<map id="ReversiWpf.MyReversi.getEdgeSideThree" name="ReversiWpf.MyReversi.getEdgeSideThree">
+<area shape="rect" id="node2" href="$class_reversi_wpf_1_1_my_reversi.html#af7ca68ea9f05d79c1debbdc320555098" title="解析を行う(黒) " alt="" coords="227,5,432,47"/>
+<area shape="rect" id="node10" href="$class_reversi_wpf_1_1_reversi_play.html#ab9824cdb1bc61ac894ea237b732bd166" title="リバーシプレイコンピューター " alt="" coords="733,129,933,171"/>
+<area shape="rect" id="node12" href="$class_reversi_wpf_1_1_my_reversi.html#a7be281b0dbae11afb652260b4d30f128" title="解析を行う(白) " alt="" coords="227,71,432,112"/>
+<area shape="rect" id="node3" href="$class_reversi_wpf_1_1_my_reversi.html#a14a3c0720db3ff11196e0c7c34bd80c0" title="解析を行う " alt="" coords="480,71,685,112"/>
+<area shape="rect" id="node4" href="$class_reversi_wpf_1_1_reversi_play.html#aee0447f5d955d0b2b66d14b491d90e81" title="リセット処理 " alt="" coords="1247,27,1439,54"/>
+<area shape="rect" id="node8" href="$class_reversi_wpf_1_1_reversi_play.html#a735fd2b6a5f7be5089f702f5265cd183" title="リバーシプレイ " alt="" coords="1229,114,1456,141"/>
+<area shape="rect" id="node5" href="$class_reversi_wpf_1_1_main_window.html#af64ecb3857a3d547b4020e9900048360" title="コンストラクタ " alt="" coords="2024,12,2221,53"/>
+<area shape="rect" id="node6" href="$class_reversi_wpf_1_1_main_window.html#a9b7c6af889d570bc68dcd2cf981e4cf8" title="リセットクリック " alt="" coords="1515,41,1701,83"/>
+<area shape="rect" id="node7" href="$class_reversi_wpf_1_1_main_window.html#a4cf9bc92cee02fa8e3b00fa56fb41c82" title="InitializeComponent " alt="" coords="1760,41,1976,83"/>
+<area shape="rect" id="node9" href="$class_reversi_wpf_1_1_main_window.html#a7514a29baed5a572e78354addb9678bc" title="マスクリック " alt="" coords="1504,107,1712,148"/>
+<area shape="rect" id="node11" href="$class_reversi_wpf_1_1_reversi_play.html#ae7e23ef808336291a39f0ac37687d1dc" title="リバーシプレイサブ " alt="" coords="981,129,1181,171"/>
+</map>

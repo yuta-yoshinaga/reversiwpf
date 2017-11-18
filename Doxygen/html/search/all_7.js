@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['gameendanimexec',['gameEndAnimExec',['../class_reversi_wpf_1_1_reversi_play.html#a222edc5a1161d4859635ef87d46da59c',1,'ReversiWpf::ReversiPlay']]],
+  ['getbetcnt',['getBetCnt',['../class_reversi_wpf_1_1_my_reversi.html#a57482d7118dad2c5d104e186acd5212b',1,'ReversiWpf::MyReversi']]],
+  ['getcolorena',['getColorEna',['../class_reversi_wpf_1_1_my_reversi.html#a9a7c386e4b5007a937865ab301774c9e',1,'ReversiWpf::MyReversi']]],
+  ['getedgesideone',['getEdgeSideOne',['../class_reversi_wpf_1_1_my_reversi.html#a6e9641216f52b0c384f43a26cfea981f',1,'ReversiWpf::MyReversi']]],
+  ['getedgesidethree',['getEdgeSideThree',['../class_reversi_wpf_1_1_my_reversi.html#a278da279bc20775b0849a1316729d6a3',1,'ReversiWpf::MyReversi']]],
+  ['getedgesidetwo',['getEdgeSideTwo',['../class_reversi_wpf_1_1_my_reversi.html#ae59ceaeded22519213df314ab31b45d1',1,'ReversiWpf::MyReversi']]],
+  ['getedgesidezero',['getEdgeSideZero',['../class_reversi_wpf_1_1_my_reversi.html#a3418fce34fd194987dc0efcd7aa654a4',1,'ReversiWpf::MyReversi']]],
+  ['getgameendsts',['getGameEndSts',['../class_reversi_wpf_1_1_my_reversi.html#a77a81c9c08a6dadcab0dd5741de1b88b',1,'ReversiWpf::MyReversi']]],
+  ['gethistory',['getHistory',['../class_reversi_wpf_1_1_my_reversi.html#aa85fcb151ab7c188b0637b9eb9269baa',1,'ReversiWpf::MyReversi']]],
+  ['gethistorycnt',['getHistoryCnt',['../class_reversi_wpf_1_1_my_reversi.html#a9e6ba44101405de13825f3585fda00af',1,'ReversiWpf::MyReversi']]],
+  ['getmasusts',['getMasuSts',['../class_reversi_wpf_1_1_my_reversi.html#a34b0c0b96b147a8d2f1dc6863cac25d8',1,'ReversiWpf::MyReversi']]],
+  ['getmasustscnt',['getMasuStsCnt',['../class_reversi_wpf_1_1_my_reversi.html#ac2723c418d4b51ec0e4598cbd44634f0',1,'ReversiWpf::MyReversi']]],
+  ['getmasustsena',['getMasuStsEna',['../class_reversi_wpf_1_1_my_reversi.html#ac122d3db633616259d22d8bb885c074d',1,'ReversiWpf::MyReversi']]],
+  ['getmasustsold',['getMasuStsOld',['../class_reversi_wpf_1_1_my_reversi.html#acdf94f106c88ded99a4c5dcbbc19be16',1,'ReversiWpf::MyReversi']]],
+  ['getpassena',['getPassEna',['../class_reversi_wpf_1_1_my_reversi.html#ab450b1508d0190909b016ed1855905e3',1,'ReversiWpf::MyReversi']]],
+  ['getpoint',['getPoint',['../class_reversi_wpf_1_1_my_reversi.html#a4e31d8df5c6759c2f6afea00f8332706',1,'ReversiWpf::MyReversi']]],
+  ['getpointanz',['getPointAnz',['../class_reversi_wpf_1_1_my_reversi.html#af60c852859185c303ebd4d9b5b3f8700',1,'ReversiWpf::MyReversi']]],
+  ['getpointcnt',['getPointCnt',['../class_reversi_wpf_1_1_my_reversi.html#a86f08f7b19fe00b88ef7236bd784a451',1,'ReversiWpf::MyReversi']]]
+];

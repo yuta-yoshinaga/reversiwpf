@@ -1,0 +1,32 @@
+<map id="ReversiWpf.ReversiPlay.reversiPlayCpu" name="ReversiWpf.ReversiPlay.reversiPlayCpu">
+<area shape="rect" id="node2" href="$class_reversi_wpf_1_1_my_reversi.html#a86f08f7b19fe00b88ef7236bd784a451" title="ポイント座標数取得 " alt="" coords="783,593,957,634"/>
+<area shape="rect" id="node3" href="$class_reversi_wpf_1_1_my_reversi.html#a4e31d8df5c6759c2f6afea00f8332706" title="ポイント座標取得 " alt="" coords="269,15,443,57"/>
+<area shape="rect" id="node5" href="$class_reversi_wpf_1_1_my_reversi.html#a57482d7118dad2c5d104e186acd5212b" title="コマ数取得 " alt="" coords="1037,1242,1211,1283"/>
+<area shape="rect" id="node6" href="$class_reversi_wpf_1_1_my_reversi.html#ac122d3db633616259d22d8bb885c074d" title="指定座標に指定色を置けるかチェック " alt="" coords="1037,651,1211,693"/>
+<area shape="rect" id="node7" href="$class_reversi_wpf_1_1_my_reversi.html#a6e9641216f52b0c384f43a26cfea981f" title="指定座標が角の一つ手前か取得 " alt="" coords="783,710,957,751"/>
+<area shape="rect" id="node8" href="$class_reversi_wpf_1_1_my_reversi.html#a3418fce34fd194987dc0efcd7aa654a4" title="指定座標が角か取得 " alt="" coords="783,527,957,569"/>
+<area shape="rect" id="node9" href="$class_reversi_wpf_1_1_my_reversi.html#ae59ceaeded22519213df314ab31b45d1" title="指定座標が角の二つ手前か取得 " alt="" coords="783,331,957,373"/>
+<area shape="rect" id="node10" href="$class_reversi_wpf_1_1_my_reversi.html#a278da279bc20775b0849a1316729d6a3" title="指定座標が角の三つ以上手前か取得 " alt="" coords="783,397,957,438"/>
+<area shape="rect" id="node11" href="$class_reversi_wpf_1_1_my_reversi.html#ac2723c418d4b51ec0e4598cbd44634f0" title="指定座標の獲得コマ数取得 " alt="" coords="1037,1307,1211,1349"/>
+<area shape="rect" id="node12" href="$class_reversi_wpf_1_1_my_reversi.html#ab450b1508d0190909b016ed1855905e3" title="パス判定 " alt="" coords="269,106,443,147"/>
+<area shape="rect" id="node13" href="$class_reversi_wpf_1_1_my_reversi.html#af60c852859185c303ebd4d9b5b3f8700" title="ポイント座標解析取得 " alt="" coords="269,878,443,919"/>
+<area shape="rect" id="node14" href="$class_reversi_wpf_1_1_my_reversi.html#acad9426b5389a91f1f42c733b2f2097e" title="角の隣に置いても角を取られないマス検索 " alt="" coords="760,776,980,803"/>
+<area shape="rect" id="node16" href="$class_reversi_wpf_1_1_my_reversi.html#a03c7e639718936243e30302680c63f99" title="指定座標にコマを置く " alt="" coords="523,167,696,209"/>
+<area shape="rect" id="node19" href="$class_reversi_wpf_1_1_my_reversi.html#a14a3c0720db3ff11196e0c7c34bd80c0" title="解析を行う " alt="" coords="253,441,459,482"/>
+<area shape="rect" id="node24" href="$class_reversi_wpf_1_1_reversi_play.html#acf2427a8a68d437b792975866fbf754d" title="描画メッセージ送信 " alt="" coords="514,1030,705,1071"/>
+<area shape="rect" id="node25" href="$class_reversi_wpf_1_1_reversi_play.html#aa9c1ae9fc1af06e7e73f9db980cf0cfa" title="メッセージ " alt="" coords="775,1059,965,1101"/>
+<area shape="rect" id="node29" href="$class_reversi_wpf_1_1_reversi_play.html#ae64bc4578a896ccd8fcff7b35763cf2e" title="マス描画更新 " alt="" coords="261,1085,451,1126"/>
+<area shape="rect" id="node4" href="$class_reversi_wpf_1_1_my_reversi.html#adc98d24744c8e50f62f94b9441f582c5" title="パラメーター範囲チェック " alt="" coords="1268,877,1485,904"/>
+<area shape="rect" id="node15" href="$class_reversi_wpf_1_1_my_reversi.html#a34b0c0b96b147a8d2f1dc6863cac25d8" title="マスステータスを取得 " alt="" coords="1037,929,1211,970"/>
+<area shape="rect" id="node17" href="$class_reversi_wpf_1_1_my_reversi.html#a0c99040662eebcca741bdda303f07eb6" title="コマをひっくり返す " alt="" coords="785,266,955,307"/>
+<area shape="rect" id="node18" href="$class_reversi_wpf_1_1_my_reversi.html#a7e4d94600afb1b9d512341b1692769e7" title="各コマの置ける場所等のステータス作成 " alt="" coords="777,149,963,190"/>
+<area shape="rect" id="node20" href="$class_reversi_wpf_1_1_reversi_anz.html#a436fc0f66a511af5d589fe2ef493c8af" title="リセット " alt="" coords="515,456,704,483"/>
+<area shape="rect" id="node21" href="$class_reversi_wpf_1_1_my_reversi.html#af7ca68ea9f05d79c1debbdc320555098" title="解析を行う(黒) " alt="" coords="507,558,712,599"/>
+<area shape="rect" id="node23" href="$class_reversi_wpf_1_1_my_reversi.html#a7be281b0dbae11afb652260b4d30f128" title="解析を行う(白) " alt="" coords="507,390,712,431"/>
+<area shape="rect" id="node22" href="$class_reversi_wpf_1_1_my_reversi.html#a9a7c386e4b5007a937865ab301774c9e" title="指定色が現在置ける場所があるかチェック " alt="" coords="783,462,957,503"/>
+<area shape="rect" id="node26" href="$class_reversi_wpf_1_1_reversi_play.html#adf9df9b9ae755f35bdc7d998cb1c43c4" title="1マス描画 " alt="" coords="1028,1125,1220,1166"/>
+<area shape="rect" id="node27" href="$class_reversi_wpf_1_1_reversi_play.html#a009e9476a5ca008b66093f78132bb096" title="現在の色メッセージ " alt="" coords="1033,994,1215,1035"/>
+<area shape="rect" id="node28" href="$class_reversi_wpf_1_1_reversi_play.html#a3bf270db60f09d060120c0d85966e754" title="現在のステータスメッセージ " alt="" coords="1033,1059,1215,1101"/>
+<area shape="rect" id="node30" href="$class_reversi_wpf_1_1_reversi_play.html#ad05442c4f60d564ea30e57e782efe985" title="情報描画メッセージ送信 " alt="" coords="514,1147,705,1189"/>
+<area shape="rect" id="node31" href="$class_reversi_wpf_1_1_my_reversi.html#acdf94f106c88ded99a4c5dcbbc19be16" title="以前のマスステータスを取得 " alt="" coords="523,1213,696,1254"/>
+</map>

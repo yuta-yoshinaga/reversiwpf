@@ -1,0 +1,9 @@
+<map id="ReversiWpf.ReversiPlay.ViewMsgDlgLocal" name="ReversiWpf.ReversiPlay.ViewMsgDlgLocal">
+<area shape="rect" id="node2" href="$class_reversi_wpf_1_1_reversi_play.html#a735fd2b6a5f7be5089f702f5265cd183" title="リバーシプレイ " alt="" coords="740,54,967,80"/>
+<area shape="rect" id="node6" href="$class_reversi_wpf_1_1_reversi_play.html#a091d27bec4b3570ab595a49170342105" title="リバーシプレイ終了 " alt="" coords="244,25,444,66"/>
+<area shape="rect" id="node8" href="$class_reversi_wpf_1_1_reversi_play.html#a3aca2f66c873be50dca194a396d34bd7" title="リバーシプレイパス " alt="" coords="244,90,444,132"/>
+<area shape="rect" id="node3" href="$class_reversi_wpf_1_1_main_window.html#a7514a29baed5a572e78354addb9678bc" title="マスクリック " alt="" coords="1015,46,1223,88"/>
+<area shape="rect" id="node4" href="$class_reversi_wpf_1_1_main_window.html#a4cf9bc92cee02fa8e3b00fa56fb41c82" title="InitializeComponent " alt="" coords="1271,46,1487,88"/>
+<area shape="rect" id="node5" href="$class_reversi_wpf_1_1_main_window.html#af64ecb3857a3d547b4020e9900048360" title="コンストラクタ " alt="" coords="1535,46,1732,88"/>
+<area shape="rect" id="node7" href="$class_reversi_wpf_1_1_reversi_play.html#ae7e23ef808336291a39f0ac37687d1dc" title="リバーシプレイサブ " alt="" coords="492,76,692,117"/>
+</map>
