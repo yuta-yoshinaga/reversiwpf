@@ -24,6 +24,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -54,7 +55,7 @@ namespace ReversiWpf
 		public ReversiSetting m_AppSettings;								//!< アプリ設定
 		public ReversiPlay m_ReversiPlay;									//!< リバーシ本体
 		private static System.Timers.Timer aTimer;							//!< タイマー
-		private System.Drawing.Size oldSize;								//!< リサイズ前のサイズ
+		private System.Windows.Size oldSize;								//!< リサイズ前のサイズ
 
 		[System.Runtime.InteropServices.DllImport("gdi32.dll")]
 		public static extern bool DeleteObject(IntPtr hObject);				//!< gdi32.dllのDeleteObjectメソッドの使用を宣言する。
@@ -464,7 +465,7 @@ namespace ReversiWpf
 		////////////////////////////////////////////////////////////////////////////////
 		public void CurStsMsg(string text)
 		{
-            Dispatcher.Invoke(new CurStsMsgDelegate(CurStsMsgLocal), text);
+			Dispatcher.Invoke(new CurStsMsgDelegate(CurStsMsgLocal), text);
 		}
 
 		////////////////////////////////////////////////////////////////////////////////
@@ -545,8 +546,81 @@ namespace ReversiWpf
 			// *** フォームが必要なくなったところで、Disposeを呼び出す *** //
 			this.m_ReversiPlay.mSetting = this.m_AppSettings;
 			this.appInit();
-            Task newTask = new Task(() => { System.Threading.Thread.Sleep(500); this.m_ReversiPlay.reset(); });
-            newTask.Start();
-        }
-    }
+			Task newTask = new Task(() => { System.Threading.Thread.Sleep(500); this.m_ReversiPlay.reset(); });
+			newTask.Start();
+		}
+
+		////////////////////////////////////////////////////////////////////////////////
+		///	@brief			リサイズ終了イベント
+		///	@fn				void Reversi_Resize(object sender, EventArgs e)
+		///	@param[in]		object sender
+		///	@param[in]		EventArgs e
+		///	@return			ありません
+		///	@author			Yuta Yoshinaga
+		///	@date			2017.10.20
+		///
+		////////////////////////////////////////////////////////////////////////////////
+		private void Reversi_ResizeEnd(object sender, EventArgs e)
+		{
+			// *** リサイズ終了後、再描画とレイアウトロジックを実行する *** //
+			System.Console.WriteLine("Reversi_ResizeEnd() : ");
+
+			System.Windows.Size curSize = new System.Windows.Size();
+			curSize.Width = this.ActualWidth;
+			curSize.Height = this.ActualHeight;
+			if(oldSize.Width != curSize.Width || oldSize.Height != curSize.Height)
+			{
+				// *** ちらつき防止のためウィンドウサイズ変更されたときのみ再描画 *** //
+				oldSize.Width = curSize.Width;
+				oldSize.Height = curSize.Height;
+				this.appInit();
+				Task newTask = new Task( () => { this.m_ReversiPlay.drawUpdateForcibly(this.m_AppSettings.mAssist); } );
+				newTask.Start();
+			}
+		}
+
+		////////////////////////////////////////////////////////////////////////////////
+		///	@brief			ウィンドウサイズ変更
+		///	@fn				void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+		///	@param[in]		object sender
+		///	@param[in]		SizeChangedEventArgs e
+		///	@return			ありません
+		///	@author			Yuta Yoshinaga
+		///	@date			2017.10.20
+		///
+		////////////////////////////////////////////////////////////////////////////////
+		private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+		{
+			System.Console.WriteLine("Window_SizeChanged() : ");
+
+			// Create a timer with a 0.1 second interval.
+			double interval = 100.0;
+			if(aTimer != null)
+			{
+				// *** タイマーキャンセル *** //
+				aTimer.Enabled = false;
+			}
+			aTimer = new System.Timers.Timer(interval);
+			// Hook up the event handler for the Elapsed event.
+			aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+			// Only raise the event the first time Interval elapses.
+			aTimer.AutoReset = false;
+			aTimer.Enabled = true;
+		}
+
+		////////////////////////////////////////////////////////////////////////////////
+		///	@brief			タイマーイベント
+		///	@fn				void OnTimedEvent(object source, ElapsedEventArgs e)
+		///	@param[in]		object source
+		///	@param[in]		ElapsedEventArgs e
+		///	@return			ありません
+		///	@author			Yuta Yoshinaga
+		///	@date			2017.10.20
+		///
+		////////////////////////////////////////////////////////////////////////////////
+		private void OnTimedEvent(object source, ElapsedEventArgs e)
+		{
+			Dispatcher.Invoke(new Reversi_ResizeEndDelegate(this.Reversi_ResizeEnd), source, e);
+		}
+	}
 }
